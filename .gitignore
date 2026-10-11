@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# Testing
+.htmlcov
+.coverage
+.pytest_cache/
+
+# Editors
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Local meeting data (transcript.json contains source of truth for summaries)
+# meeting-*.json

@@ -1,0 +1,1997 @@
+{
+  "schema_version": "1.0",
+  "kind": "meeting-transcript",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=b5bXaiQuLjo",
+    "video_id": "b5bXaiQuLjo",
+    "title": "Voy a utilizar la IA para Invertir mi Dinero",
+    "description": "¡Bienvenidos a la Pizarra de Andrés! \n\nEn el vídeo de hoy vamos a ver cómo he configurado la inteligencia artificial para que tome decisiones de inversión y comprobaremos dentro de unos meses si es capaz de batir al mercado.\n\n💸 Empieza a invertir con MyInvestor (apóyame usando este link) con el código PIZARRA 20€ de regalo: https://myinvestor.es/landings/promociones/la_pizarra/  \n\n🚀 Recursos y herramientas recomendadas:\n\n🔹 Mi plataforma de fondos: https://artemisafunds.com\n🔹 15% de descuento extra en InvestingPro con el código PIZARRA: https://es.investing.com/pro/pricing/partners/pizarra?oid=3&affid=1180&transaction_id=4bf65ea864e041beb6ae06bd5ba58596&couponCode=pizarra&utm_source=1180&utm_medium=affiliates&sm_channel \n🔹 Newsletter (contenido exclusivo): https://news.lapizarradeandres.com/\n🔹 Web + servicios: https://lapizarradeandres.com/\n\n 📲 Sígueme para aprender a invertir mejor:\n\nTwitch (directos): https://www.twitch.tv/lapizarradeandres \nTikTok: https://www.tiktok.com/@lapizarradeandres1 \nInstagram: https://www.instagram.com/lapizarradeandres \nX (Twitter): https://x.com/pizarradeandres\nCanal secundario: https://www.youtube.com/@LaPizarradeAndrésLive \n\n#invertirdinero #fondosindexados #finanzaspersonales #libertadfinanciera #ingresospasivos #myinvestor #lapizarradeandres    \n\n-----DISCLAIMER--------\nTodos los vídeos de este canal se basan en análisis propios, experiencias y opiniones. En ningún caso se tratan de consejos de venta/recomendaciones.\nInvertir conlleva riesgos. Todo inversor debe realizar un análisis previo antes de tomar una decisión de inversión y ser responsable de sus acciones.\n\nLa información aquí contenida se expone a título meramente informativo y no constituye una recomendación de inversión, ni invitación, oferta, solicitud u obligación por parte de su creador La Pizarra De Andrés. Al reflejar opiniones personales, su contenido es meramente informativo y por tanto, su autor no será responsable de ninguna pérdida financiera, ni decisión tomada sobre la base de la información contenida en este canal.",
+    "channel": "La Pizarra de Andrés",
+    "uploader": "La Pizarra de Andrés",
+    "uploader_id": "@lapizarradeandres",
+    "upload_date": "2026-10-09",
+    "duration_seconds": 549,
+    "language_code": "es",
+    "language_name": "Spanish",
+    "subtitle_kind": "auto",
+    "subtitle_format": "json3",
+    "has_speaker_labels": false,
+    "fetched_at": "2026-10-11T21:52:24+00:00"
+  },
+  "stats": {
+    "segment_count": 269,
+    "chunk_count": 9,
+    "speaker_count": 0,
+    "word_count": 1905,
+    "character_count": 10208,
+    "time_span_seconds": 551
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "text_start": 0,
+      "text_end": 1172,
+      "time_start_iso": "00:00:00",
+      "time_end_iso": "00:01:06",
+      "speakers": [],
+      "text": "Hola a todos y bienvenidos un día más a mi canal La Pizarra Andrés. En el día de hoy nos hacemos una pregunta, ¿puede la IA ser una buena gestora? No tengo la respuesta hoy mismo, pero sí la tendremos en el futuro porque hemos hecho algo muy interesante, ¿vale? Hemos hecho diferentes capas de elecciones con diferentes IAS o mejor dicho con diferentes plataformas para intentar hacer una cartera eh lo más optimizada posible desde un punto de vista riesgo beneficio. Y es que hemos elegido las empresas que teóricamente más baratas están, que además cumplan con ciertos ratios de solvencia o lo que es lo mismo que además sean buenas empresas. Es decir, vamos a intentar gestionar con diferentes plataformas una cartera como si fuéramos gestores value para intentar, al menos es lo que yo estoy exigiendo, un 15% anualizado. Por supuesto, luego esto se comparará con lo que hagan los mercados en ese tiempo, pero quiero enseñaros cómo lo he hecho porque creo que es muy interesante y además lo podéis seguir en los directos que hago en los en el día a día, ¿no? E para esto hemos utilizado dos plataformas, ¿vale? Y os voy a enseñar aquí porque creo que es un experimento"
+    },
+    {
+      "index": 1,
+      "text_start": 1173,
+      "text_end": 2366,
+      "time_start_iso": "00:01:03",
+      "time_end_iso": "00:02:13",
+      "speakers": [],
+      "text": "que eh hecho por vosotros con lo que vosotros queráis, podríais eh tener en cuenta que al final cuando vais a crear una estrategia e mínimo se necesita un histórico amplio por amplio mínimo mínimo os diría 12 18 meses para por lo menos darle algo de valor a lo que pueda ser este tipo de gestión y que no sea fruto de la suerte. Entonces, si alguien, como estoy haciendo yo, hace otras carteras eh de forma eh algo diferente, por ejemplo, alguien a lo mejor buscando empresas de otro tipo o empresas solo españolas o empresas solo pequeñas o empresas lo que sea con las con las con los parámetros que ellos quieran, pues podremos llegar a la conclusión de si de verdad la IA puede gestionar o no. Se necesita una IA, ¿vale? Yo estoy usando Grockbot. Hm, Grock es la la de de Elon Mask de X y Grockbot es simplemente un una plataforma. Yo tengo la de pago, pago 200 € al año. Esto no es publicidad de nada. Eh, pues eh, básicamente tengo aquí unos, yo los llamo unos machacas, son unas personas o unos bots que trabajan para mí y les voy pidiendo cosas. Entonces, ya tengo ciertos expertos en ciertas cosas. Por ejemplo, tengo aquí lo que llamo chicharro value, un experto en valoración. ¿Vale?"
+    },
+    {
+      "index": 2,
+      "text_start": 2367,
+      "text_end": 3541,
+      "time_start_iso": "00:02:11",
+      "time_end_iso": "00:03:19",
+      "speakers": [],
+      "text": "Entonces, ¿qué es lo que le pedí aquí? Bueno, pues que quiero hacer una cartera eh de 20 de 20 acciones. Ya le di previamente las e un poco las directrices de cómo gestionar la cartera. Le dije que estaba buscando retornos analizados del 15% y que mi intención era buscar las acciones más interesantes posibles. y dentro de esas empresas, pues luego ya que haga un examen, digamos, dentro de lo que pueden ser esas métricas value de esas empresas que están asequibles o baratas, que haga luego un análisis más a fondo de si cree que eso que está barato es barato solo en el papel, es decir, si es el famoso value trap, si es una empresa que está barata porque eh ha caído mucho, pero esa caída está justificada, entonces no está tan barata. o si son empresas que tienen un enorme potencial y no se sabe bien por qué por qué han caído, ¿no? Entonces, antes de darle toda la hm responsabilidad de elección de las empresas a la IA, lo que he hecho es lo siguiente. Como bien sabéis, eh Investing Pro es eh la plataforma que yo utilizo para saber si una empresa pues así de primera está cara o barata. Yo creo que más o menos todos estáis familiarizados, de hecho, con el código"
+    },
+    {
+      "index": 3,
+      "text_start": 3542,
+      "text_end": 4705,
+      "time_start_iso": "00:03:17",
+      "time_end_iso": "00:04:18",
+      "speakers": [],
+      "text": "pizarra en en Investing Pro, pues tenéis todo el año esta plataforma pues por no sé si 60 € o una cosa así, ¿no? Entonces, por ejemplo, he cogido aquí uno de los valores que vamos a tener en cartera, ¿no? Y lo que le he dicho a la IA es, \"Oye, métete en Investing, mira cuáles son las que teóricamente son las empresas más infravaloradas del mundo, a poder ser, insisto, esto no son eh empresas ni de países exóticos ni americanas, ¿vale? he querido eh salirme un poco de del de lo mainstream y que me diera pues empresas de países de primer nivel pero que no fueran americanas. Y por ejemplo he encontrado joyas joyas como estas, es decir, cosas que no tienen ningún sentido. Por ejemplo, esta empresa cotiza 68 € es financial services, con lo cual no tendría por qué ser un un nicho que estuviera castigado. Es decir, si esto fuera software, pues podrías decir, \"Oye, es que el software a lo mejor es value trap porque con la IA nunca volver va a volver a ser lo que era, ¿no?\" Entonces, esto es financial service. No conozco esta empresa, ¿vale? Es alemana. Y esta empresa cotiza hoy a 67 con analistas en 155. Es decir, el peor analista cree que debería valer"
+    },
+    {
+      "index": 4,
+      "text_start": 4706,
+      "text_end": 5892,
+      "time_start_iso": "00:04:16",
+      "time_end_iso": "00:05:20",
+      "speakers": [],
+      "text": "analista más pesimista cree que debería valer 134, el analista más optimista 185. Y los modelos de valoración, el que peor de todos, que aquí podríamos ver que es el earnings power value, no sé qué modelo de valoración es este, pero bueno, es el único además outlier porque todos los demás, fijaros, están por encima de 100, pues piensan que esta empresa debería valer mucho más. Con lo cual, lo que hace la IA primero es buscar en Investing Pro todas esas empresas que tanto por analistas como por modelos están baratas y después les pasa lo que es ese razonamiento que he conseguido que aprendan durante mucho tiempo de, oye, compruébame que esto no sea una value trap, compruébame que el negocio sea sólido, compruébame que el negocio pueda seguir teniendo potencia en el futuro, etcétera, etcétera, ¿no? y lo ha hecho con muchas, por ejemplo, aquí vemos la conocida Aritza, una empresa que en su día llevó para mes, que la ha descartado por tener demasiada deuda, es decir, no niega que sea una empresa que a lo mejor esté barata, pero el riesgo de la deuda le ha hecho descartarla, ¿no? Y una vez llegado a eso, hemos hecho una cartera de 20 empresas, ¿vale? Eh, aquí lo vemos, son"
+    },
+    {
+      "index": 5,
+      "text_start": 5893,
+      "text_end": 7079,
+      "time_start_iso": "00:05:18",
+      "time_end_iso": "00:06:26",
+      "speakers": [],
+      "text": "todas estas, todas estas lo que es lo que nos garantiza pues que tiene dos filtros. tiene el filtro primero de saber que son empresas que están baratas a efectos lo más objetivos posibles a nivel de múltiplos, ¿vale? Que salen de Investing Pro y después está ese análisis quizá menos numérico, más de producto, más de viabilidad de la empresa, etcétera, etcétera, eh que he ido ducando a estos bots durante mucho tiempo, ¿no? Y esta es la cartera que me ha dado, ¿vale? Eh, con ella, pues aquí lo vemos. Em, el valor esperado a 12 meses o lo que espera la IA obtener es por encima de un 15%, incluso en un escenario prudente. Todo esto a juzgar por la por la clase de empresas y el apps que tienen, ¿vale? Aquí lo vemos como las ha organizado, de mayor potencial de apps a menor, ¿vale? No es solo el Upsite, insisto, porque si fuerais solo a Investing, a lo mejor encontraríais empresas con más UPS, es Upsite más eh una tesis. Y aquí vemos la tesis que tiene, ¿vale? la tesis que ha cogido en cada una eh de los motivos por los cuales les han hecho e elegir esos. ¿Y qué es lo que hacemos después? Bueno, pues ya que es un bot, le hemos le hemos dado la orden de que se meta investing"
+    },
+    {
+      "index": 6,
+      "text_start": 7080,
+      "text_end": 8261,
+      "time_start_iso": "00:06:24",
+      "time_end_iso": "00:07:30",
+      "speakers": [],
+      "text": "normal. Esto nos lo esta es la parte de Investing que nos de pago. Hemos creado esta cartera value, eh, y eh aquí están todas las posiciones. Eh, luego tenemos otras directrices de cómo gestionar todo esto. E pero el objetivo es pues, oye, seguir en el día a día todo esto, eh, y ver cómo cómo se comportan. Aquí podemos ver incluso el daily PNL o el net PNL desde que desde que abren, etcétera, etcétera. Y el objetivo va a ser e pues poco a poco dejarle que gestione esto como si de un gestor value se tratara. Evidentemente el challenge es bastante eh complicado porque batir los mercados es muy muy difícil, pero vamos a ver si con la sabiduría de Investing Pro, que tiene un montón de datos y un montón de sentido, eh cómo cómo da ese potencial a las cosas, ¿no? Y cómo son muchas cosas lo que te dice que está infravalorado, no es solo eh aquí fijaros todo todos los los modelos de valoración que hay o los analistas o lo que sea. pues este primer filtro unido a un filtro de lo que teóricamente es un experto. Vamos a ver si todo esto puede batir un índice. ¿Por qué os hago este vídeo? Porque me encantaría que vosotros desde vuestra casa elijáis vuestra a lo hagáis a mano"
+    },
+    {
+      "index": 7,
+      "text_start": 8262,
+      "text_end": 9452,
+      "time_start_iso": "00:07:29",
+      "time_end_iso": "00:08:33",
+      "speakers": [],
+      "text": "o lo hagáis directamente con un bot que lo hago yo, porque el bot es directamente el que compra todo esto. Pero estaría bien que idearas un bot e que hiciera algún tipo de gestión de lo que sea, ¿vale? De lo que sea. ¿Por qué? Porque este es si lo hacemos hoy e en 12, 18, 24 meses, podremos empezar a sacar conclusiones de si la IA, en este caso la mezcla entre Investing Pro y una IA, eh pues eh son capaces de gestionar su dinero apropiadamente o no. Entonces, eh simplemente, pues bueno, creo que es algo bastante curioso. Por cierto, esto lo sigo a diario y en directo, eh, todos los días, con lo cual si alguien quiere pasarse por aquí y ver un poco qué está pasando, aquí no he hablado de estas otras dos carteras, que es una cartera value, principalmente americana que ya lleva corriendo un poquito de tiempo y esta cartera Gambler, que es growth, digamos o así, de empresas más hoy, por ejemplo, el mercado se cae y evidentemente todas estas empresas que no gana dinero ninguna, pues sufren bastante. y la cartera desde Nice lleva un 030, simplemente la volatilidad es altísima, ¿no? Entonces, estas dos carteras no tenían quizá una una forma muy lógica de de invertir y en esta al"
+    },
+    {
+      "index": 8,
+      "text_start": 9453,
+      "text_end": 10208,
+      "time_start_iso": "00:08:31",
+      "time_end_iso": "00:09:10",
+      "speakers": [],
+      "text": "aplicarle el filtro de Investing Pro, eh, pues ya tenemos una base bastante sólida, que es, oye, h busquemos cosas que estén bien y dentro de esas cosas que estén bien, hagámosle un análisis adicional para saber si el futuro que tienen es eh prometedor, ¿no? Así que nada, chicos, un vídeo rápido. Os animo a que hagáis algo de esto. Creo que las tecnologías es bueno que todos las utilicemos y es bueno que cuanto antes entendamos si sirven o no sirven y no hay mejor manera que pues de una forma de estas e y dentro de un año, año y medio vendremos y presentaremos los resultados. Solamente eso, chicos. Si os ha gustado me podéis dejar un like, e algún comentario, lo que queráis y nosotros nos vemos en el siguiente vídeo. Se despide la pizarra. Okay."
+    }
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "speaker": null,
+      "start": 0.24,
+      "end": 3.5199999999999996,
+      "text": "Hola a todos y bienvenidos un día más a"
+    },
+    {
+      "index": 1,
+      "speaker": null,
+      "start": 1.839,
+      "end": 5.24,
+      "text": "mi canal La Pizarra Andrés. En el día de"
+    },
+    {
+      "index": 2,
+      "speaker": null,
+      "start": 3.52,
+      "end": 8.28,
+      "text": "hoy nos hacemos una pregunta, ¿puede la"
+    },
+    {
+      "index": 3,
+      "speaker": null,
+      "start": 5.24,
+      "end": 10.32,
+      "text": "IA ser una buena gestora? No tengo la"
+    },
+    {
+      "index": 4,
+      "speaker": null,
+      "start": 8.28,
+      "end": 12.36,
+      "text": "respuesta hoy mismo, pero sí la"
+    },
+    {
+      "index": 5,
+      "speaker": null,
+      "start": 10.32,
+      "end": 15.2,
+      "text": "tendremos en el futuro porque hemos"
+    },
+    {
+      "index": 6,
+      "speaker": null,
+      "start": 12.36,
+      "end": 17.48,
+      "text": "hecho algo muy interesante, ¿vale? Hemos"
+    },
+    {
+      "index": 7,
+      "speaker": null,
+      "start": 15.2,
+      "end": 19.56,
+      "text": "hecho diferentes capas de elecciones con"
+    },
+    {
+      "index": 8,
+      "speaker": null,
+      "start": 17.48,
+      "end": 22.16,
+      "text": "diferentes IAS o mejor dicho con"
+    },
+    {
+      "index": 9,
+      "speaker": null,
+      "start": 19.56,
+      "end": 26.0,
+      "text": "diferentes plataformas para intentar"
+    },
+    {
+      "index": 10,
+      "speaker": null,
+      "start": 22.16,
+      "end": 27.519,
+      "text": "hacer una cartera eh lo más optimizada"
+    },
+    {
+      "index": 11,
+      "speaker": null,
+      "start": 26.0,
+      "end": 29.039,
+      "text": "posible desde un punto de vista riesgo"
+    },
+    {
+      "index": 12,
+      "speaker": null,
+      "start": 27.519,
+      "end": 31.0,
+      "text": "beneficio. Y es que hemos elegido las"
+    },
+    {
+      "index": 13,
+      "speaker": null,
+      "start": 29.039,
+      "end": 33.2,
+      "text": "empresas que teóricamente más baratas"
+    },
+    {
+      "index": 14,
+      "speaker": null,
+      "start": 31.0,
+      "end": 35.28,
+      "text": "están, que además cumplan con ciertos"
+    },
+    {
+      "index": 15,
+      "speaker": null,
+      "start": 33.2,
+      "end": 37.040000000000006,
+      "text": "ratios de solvencia o lo que es lo mismo"
+    },
+    {
+      "index": 16,
+      "speaker": null,
+      "start": 35.28,
+      "end": 39.92,
+      "text": "que además sean buenas empresas. Es"
+    },
+    {
+      "index": 17,
+      "speaker": null,
+      "start": 37.04,
+      "end": 42.2,
+      "text": "decir, vamos a intentar gestionar con"
+    },
+    {
+      "index": 18,
+      "speaker": null,
+      "start": 39.92,
+      "end": 43.68,
+      "text": "diferentes plataformas una cartera como"
+    },
+    {
+      "index": 19,
+      "speaker": null,
+      "start": 42.2,
+      "end": 45.32,
+      "text": "si fuéramos gestores value para"
+    },
+    {
+      "index": 20,
+      "speaker": null,
+      "start": 43.68,
+      "end": 47.519999999999996,
+      "text": "intentar, al menos es lo que yo estoy"
+    },
+    {
+      "index": 21,
+      "speaker": null,
+      "start": 45.32,
+      "end": 49.079,
+      "text": "exigiendo, un 15% anualizado. Por"
+    },
+    {
+      "index": 22,
+      "speaker": null,
+      "start": 47.52,
+      "end": 50.64,
+      "text": "supuesto, luego esto se comparará con lo"
+    },
+    {
+      "index": 23,
+      "speaker": null,
+      "start": 49.079,
+      "end": 51.96,
+      "text": "que hagan los mercados en ese tiempo,"
+    },
+    {
+      "index": 24,
+      "speaker": null,
+      "start": 50.64,
+      "end": 53.160000000000004,
+      "text": "pero quiero enseñaros cómo lo he hecho"
+    },
+    {
+      "index": 25,
+      "speaker": null,
+      "start": 51.96,
+      "end": 55.239000000000004,
+      "text": "porque creo que es muy interesante y"
+    },
+    {
+      "index": 26,
+      "speaker": null,
+      "start": 53.16,
+      "end": 57.879,
+      "text": "además lo podéis seguir en los directos"
+    },
+    {
+      "index": 27,
+      "speaker": null,
+      "start": 55.239,
+      "end": 59.839999999999996,
+      "text": "que hago en los en el día a día, ¿no? E"
+    },
+    {
+      "index": 28,
+      "speaker": null,
+      "start": 57.879,
+      "end": 61.199,
+      "text": "para esto hemos utilizado dos"
+    },
+    {
+      "index": 29,
+      "speaker": null,
+      "start": 59.84,
+      "end": 63.28,
+      "text": "plataformas, ¿vale? Y os voy a enseñar"
+    },
+    {
+      "index": 30,
+      "speaker": null,
+      "start": 61.199,
+      "end": 66.36,
+      "text": "aquí porque creo que es un experimento"
+    },
+    {
+      "index": 31,
+      "speaker": null,
+      "start": 63.28,
+      "end": 69.72,
+      "text": "que eh hecho por vosotros con lo que"
+    },
+    {
+      "index": 32,
+      "speaker": null,
+      "start": 66.36,
+      "end": 70.88,
+      "text": "vosotros queráis, podríais eh tener en"
+    },
+    {
+      "index": 33,
+      "speaker": null,
+      "start": 69.72,
+      "end": 73.72,
+      "text": "cuenta que al final cuando vais a crear"
+    },
+    {
+      "index": 34,
+      "speaker": null,
+      "start": 70.88,
+      "end": 75.67999999999999,
+      "text": "una estrategia e mínimo se necesita un"
+    },
+    {
+      "index": 35,
+      "speaker": null,
+      "start": 73.72,
+      "end": 78.439,
+      "text": "histórico amplio por amplio mínimo"
+    },
+    {
+      "index": 36,
+      "speaker": null,
+      "start": 75.68,
+      "end": 81.32000000000001,
+      "text": "mínimo os diría 12 18 meses para por lo"
+    },
+    {
+      "index": 37,
+      "speaker": null,
+      "start": 78.439,
+      "end": 82.72,
+      "text": "menos darle algo de valor a lo que pueda"
+    },
+    {
+      "index": 38,
+      "speaker": null,
+      "start": 81.32,
+      "end": 84.19999999999999,
+      "text": "ser este tipo de gestión y que no sea"
+    },
+    {
+      "index": 39,
+      "speaker": null,
+      "start": 82.72,
+      "end": 86.84,
+      "text": "fruto de la suerte. Entonces, si"
+    },
+    {
+      "index": 40,
+      "speaker": null,
+      "start": 84.2,
+      "end": 90.07900000000001,
+      "text": "alguien, como estoy haciendo yo, hace"
+    },
+    {
+      "index": 41,
+      "speaker": null,
+      "start": 86.84,
+      "end": 91.43900000000001,
+      "text": "otras carteras eh de forma eh algo"
+    },
+    {
+      "index": 42,
+      "speaker": null,
+      "start": 90.079,
+      "end": 93.91999999999999,
+      "text": "diferente, por ejemplo, alguien a lo"
+    },
+    {
+      "index": 43,
+      "speaker": null,
+      "start": 91.439,
+      "end": 95.75899999999999,
+      "text": "mejor buscando empresas de otro tipo o"
+    },
+    {
+      "index": 44,
+      "speaker": null,
+      "start": 93.92,
+      "end": 97.96000000000001,
+      "text": "empresas solo españolas o empresas solo"
+    },
+    {
+      "index": 45,
+      "speaker": null,
+      "start": 95.759,
+      "end": 99.36,
+      "text": "pequeñas o empresas lo que sea con las"
+    },
+    {
+      "index": 46,
+      "speaker": null,
+      "start": 97.96,
+      "end": 101.03999999999999,
+      "text": "con las con los parámetros que ellos"
+    },
+    {
+      "index": 47,
+      "speaker": null,
+      "start": 99.36,
+      "end": 102.479,
+      "text": "quieran, pues podremos llegar a la"
+    },
+    {
+      "index": 48,
+      "speaker": null,
+      "start": 101.04,
+      "end": 104.24000000000001,
+      "text": "conclusión de si de verdad la IA puede"
+    },
+    {
+      "index": 49,
+      "speaker": null,
+      "start": 102.479,
+      "end": 106.96,
+      "text": "gestionar o no. Se necesita una IA,"
+    },
+    {
+      "index": 50,
+      "speaker": null,
+      "start": 104.24,
+      "end": 110.32,
+      "text": "¿vale? Yo estoy usando Grockbot. Hm,"
+    },
+    {
+      "index": 51,
+      "speaker": null,
+      "start": 106.96,
+      "end": 112.079,
+      "text": "Grock es la la de de Elon Mask de X y"
+    },
+    {
+      "index": 52,
+      "speaker": null,
+      "start": 110.32,
+      "end": 113.79899999999999,
+      "text": "Grockbot es simplemente un una"
+    },
+    {
+      "index": 53,
+      "speaker": null,
+      "start": 112.079,
+      "end": 115.55999999999999,
+      "text": "plataforma. Yo tengo la de pago, pago"
+    },
+    {
+      "index": 54,
+      "speaker": null,
+      "start": 113.799,
+      "end": 118.2,
+      "text": "200 € al año. Esto no es publicidad de"
+    },
+    {
+      "index": 55,
+      "speaker": null,
+      "start": 115.56,
+      "end": 120.159,
+      "text": "nada. Eh, pues eh, básicamente tengo"
+    },
+    {
+      "index": 56,
+      "speaker": null,
+      "start": 118.2,
+      "end": 121.88000000000001,
+      "text": "aquí unos, yo los llamo unos machacas,"
+    },
+    {
+      "index": 57,
+      "speaker": null,
+      "start": 120.159,
+      "end": 123.96000000000001,
+      "text": "son unas personas o unos bots que"
+    },
+    {
+      "index": 58,
+      "speaker": null,
+      "start": 121.88,
+      "end": 125.28,
+      "text": "trabajan para mí y les voy pidiendo"
+    },
+    {
+      "index": 59,
+      "speaker": null,
+      "start": 123.96,
+      "end": 126.91999999999999,
+      "text": "cosas. Entonces, ya tengo ciertos"
+    },
+    {
+      "index": 60,
+      "speaker": null,
+      "start": 125.28,
+      "end": 128.92,
+      "text": "expertos en ciertas cosas. Por ejemplo,"
+    },
+    {
+      "index": 61,
+      "speaker": null,
+      "start": 126.92,
+      "end": 131.72,
+      "text": "tengo aquí lo que llamo chicharro value,"
+    },
+    {
+      "index": 62,
+      "speaker": null,
+      "start": 128.92,
+      "end": 133.0,
+      "text": "un experto en valoración. ¿Vale?"
+    },
+    {
+      "index": 63,
+      "speaker": null,
+      "start": 131.72,
+      "end": 135.12,
+      "text": "Entonces, ¿qué es lo que le pedí aquí?"
+    },
+    {
+      "index": 64,
+      "speaker": null,
+      "start": 133.0,
+      "end": 137.92,
+      "text": "Bueno, pues que quiero hacer una cartera"
+    },
+    {
+      "index": 65,
+      "speaker": null,
+      "start": 135.12,
+      "end": 140.87900000000002,
+      "text": "eh de 20 de 20 acciones. Ya le di"
+    },
+    {
+      "index": 66,
+      "speaker": null,
+      "start": 137.92,
+      "end": 142.28,
+      "text": "previamente las e un poco las"
+    },
+    {
+      "index": 67,
+      "speaker": null,
+      "start": 140.879,
+      "end": 144.28,
+      "text": "directrices de cómo gestionar la"
+    },
+    {
+      "index": 68,
+      "speaker": null,
+      "start": 142.28,
+      "end": 146.08,
+      "text": "cartera. Le dije que estaba buscando"
+    },
+    {
+      "index": 69,
+      "speaker": null,
+      "start": 144.28,
+      "end": 149.08,
+      "text": "retornos analizados del 15% y que mi"
+    },
+    {
+      "index": 70,
+      "speaker": null,
+      "start": 146.08,
+      "end": 151.72,
+      "text": "intención era buscar las acciones más"
+    },
+    {
+      "index": 71,
+      "speaker": null,
+      "start": 149.08,
+      "end": 154.92000000000002,
+      "text": "interesantes posibles."
+    },
+    {
+      "index": 72,
+      "speaker": null,
+      "start": 151.72,
+      "end": 157.72,
+      "text": "y dentro de esas empresas, pues luego ya"
+    },
+    {
+      "index": 73,
+      "speaker": null,
+      "start": 154.92,
+      "end": 159.44,
+      "text": "que haga un examen, digamos, dentro de"
+    },
+    {
+      "index": 74,
+      "speaker": null,
+      "start": 157.72,
+      "end": 161.519,
+      "text": "lo que pueden ser esas métricas value de"
+    },
+    {
+      "index": 75,
+      "speaker": null,
+      "start": 159.44,
+      "end": 163.879,
+      "text": "esas empresas que están asequibles o"
+    },
+    {
+      "index": 76,
+      "speaker": null,
+      "start": 161.519,
+      "end": 165.8,
+      "text": "baratas, que haga luego un análisis más"
+    },
+    {
+      "index": 77,
+      "speaker": null,
+      "start": 163.879,
+      "end": 167.959,
+      "text": "a fondo de si cree que eso que está"
+    },
+    {
+      "index": 78,
+      "speaker": null,
+      "start": 165.8,
+      "end": 169.64000000000001,
+      "text": "barato es barato solo en el papel, es"
+    },
+    {
+      "index": 79,
+      "speaker": null,
+      "start": 167.959,
+      "end": 173.239,
+      "text": "decir, si es el famoso value trap, si es"
+    },
+    {
+      "index": 80,
+      "speaker": null,
+      "start": 169.64,
+      "end": 174.76,
+      "text": "una empresa que está barata porque eh ha"
+    },
+    {
+      "index": 81,
+      "speaker": null,
+      "start": 173.239,
+      "end": 176.159,
+      "text": "caído mucho, pero esa caída está"
+    },
+    {
+      "index": 82,
+      "speaker": null,
+      "start": 174.76,
+      "end": 178.28,
+      "text": "justificada, entonces no está tan"
+    },
+    {
+      "index": 83,
+      "speaker": null,
+      "start": 176.159,
+      "end": 179.64,
+      "text": "barata. o si son empresas que tienen un"
+    },
+    {
+      "index": 84,
+      "speaker": null,
+      "start": 178.28,
+      "end": 181.04,
+      "text": "enorme potencial y no se sabe bien por"
+    },
+    {
+      "index": 85,
+      "speaker": null,
+      "start": 179.64,
+      "end": 183.879,
+      "text": "qué por qué han caído, ¿no? Entonces,"
+    },
+    {
+      "index": 86,
+      "speaker": null,
+      "start": 181.04,
+      "end": 185.2,
+      "text": "antes de darle toda la hm"
+    },
+    {
+      "index": 87,
+      "speaker": null,
+      "start": 183.879,
+      "end": 187.35999999999999,
+      "text": "responsabilidad de elección de las"
+    },
+    {
+      "index": 88,
+      "speaker": null,
+      "start": 185.2,
+      "end": 189.28,
+      "text": "empresas a la IA, lo que he hecho es lo"
+    },
+    {
+      "index": 89,
+      "speaker": null,
+      "start": 187.36,
+      "end": 191.959,
+      "text": "siguiente. Como bien sabéis, eh"
+    },
+    {
+      "index": 90,
+      "speaker": null,
+      "start": 189.28,
+      "end": 193.44,
+      "text": "Investing Pro es eh la plataforma que yo"
+    },
+    {
+      "index": 91,
+      "speaker": null,
+      "start": 191.959,
+      "end": 194.76,
+      "text": "utilizo para saber si una empresa pues"
+    },
+    {
+      "index": 92,
+      "speaker": null,
+      "start": 193.44,
+      "end": 195.799,
+      "text": "así de primera está cara o barata. Yo"
+    },
+    {
+      "index": 93,
+      "speaker": null,
+      "start": 194.76,
+      "end": 197.56,
+      "text": "creo que más o menos todos estáis"
+    },
+    {
+      "index": 94,
+      "speaker": null,
+      "start": 195.799,
+      "end": 199.59900000000002,
+      "text": "familiarizados, de hecho, con el código"
+    },
+    {
+      "index": 95,
+      "speaker": null,
+      "start": 197.56,
+      "end": 200.879,
+      "text": "pizarra en en Investing Pro, pues tenéis"
+    },
+    {
+      "index": 96,
+      "speaker": null,
+      "start": 199.599,
+      "end": 202.76,
+      "text": "todo el año esta plataforma pues por no"
+    },
+    {
+      "index": 97,
+      "speaker": null,
+      "start": 200.879,
+      "end": 204.28,
+      "text": "sé si 60 € o una cosa así, ¿no?"
+    },
+    {
+      "index": 98,
+      "speaker": null,
+      "start": 202.76,
+      "end": 205.39999999999998,
+      "text": "Entonces, por ejemplo, he cogido aquí"
+    },
+    {
+      "index": 99,
+      "speaker": null,
+      "start": 204.28,
+      "end": 207.319,
+      "text": "uno de los valores que vamos a tener en"
+    },
+    {
+      "index": 100,
+      "speaker": null,
+      "start": 205.4,
+      "end": 210.159,
+      "text": "cartera, ¿no? Y lo que le he dicho a la"
+    },
+    {
+      "index": 101,
+      "speaker": null,
+      "start": 207.319,
+      "end": 212.35999999999999,
+      "text": "IA es, \"Oye, métete en Investing, mira"
+    },
+    {
+      "index": 102,
+      "speaker": null,
+      "start": 210.159,
+      "end": 214.72,
+      "text": "cuáles son las que teóricamente son las"
+    },
+    {
+      "index": 103,
+      "speaker": null,
+      "start": 212.36,
+      "end": 216.87900000000002,
+      "text": "empresas más infravaloradas del mundo, a"
+    },
+    {
+      "index": 104,
+      "speaker": null,
+      "start": 214.72,
+      "end": 218.799,
+      "text": "poder ser, insisto, esto no son eh"
+    },
+    {
+      "index": 105,
+      "speaker": null,
+      "start": 216.879,
+      "end": 221.2,
+      "text": "empresas ni de países exóticos ni"
+    },
+    {
+      "index": 106,
+      "speaker": null,
+      "start": 218.799,
+      "end": 224.31900000000002,
+      "text": "americanas, ¿vale? he querido eh salirme"
+    },
+    {
+      "index": 107,
+      "speaker": null,
+      "start": 221.2,
+      "end": 226.11999999999998,
+      "text": "un poco de del de lo mainstream y que me"
+    },
+    {
+      "index": 108,
+      "speaker": null,
+      "start": 224.319,
+      "end": 227.48,
+      "text": "diera pues empresas de países de primer"
+    },
+    {
+      "index": 109,
+      "speaker": null,
+      "start": 226.12,
+      "end": 230.20000000000002,
+      "text": "nivel pero que no fueran americanas. Y"
+    },
+    {
+      "index": 110,
+      "speaker": null,
+      "start": 227.48,
+      "end": 231.51899999999998,
+      "text": "por ejemplo he encontrado joyas joyas"
+    },
+    {
+      "index": 111,
+      "speaker": null,
+      "start": 230.2,
+      "end": 232.72,
+      "text": "como estas, es decir, cosas que no"
+    },
+    {
+      "index": 112,
+      "speaker": null,
+      "start": 231.519,
+      "end": 235.87900000000002,
+      "text": "tienen ningún sentido. Por ejemplo, esta"
+    },
+    {
+      "index": 113,
+      "speaker": null,
+      "start": 232.72,
+      "end": 237.159,
+      "text": "empresa cotiza 68 € es financial"
+    },
+    {
+      "index": 114,
+      "speaker": null,
+      "start": 235.879,
+      "end": 239.35999999999999,
+      "text": "services, con lo cual no tendría por qué"
+    },
+    {
+      "index": 115,
+      "speaker": null,
+      "start": 237.159,
+      "end": 241.04,
+      "text": "ser un un nicho que estuviera castigado."
+    },
+    {
+      "index": 116,
+      "speaker": null,
+      "start": 239.36,
+      "end": 242.12,
+      "text": "Es decir, si esto fuera software, pues"
+    },
+    {
+      "index": 117,
+      "speaker": null,
+      "start": 241.04,
+      "end": 243.84,
+      "text": "podrías decir, \"Oye, es que el software"
+    },
+    {
+      "index": 118,
+      "speaker": null,
+      "start": 242.12,
+      "end": 245.439,
+      "text": "a lo mejor es value trap porque con la"
+    },
+    {
+      "index": 119,
+      "speaker": null,
+      "start": 243.84,
+      "end": 246.879,
+      "text": "IA nunca volver va a volver a ser lo que"
+    },
+    {
+      "index": 120,
+      "speaker": null,
+      "start": 245.439,
+      "end": 248.799,
+      "text": "era, ¿no?\" Entonces, esto es financial"
+    },
+    {
+      "index": 121,
+      "speaker": null,
+      "start": 246.879,
+      "end": 251.07899999999998,
+      "text": "service. No conozco esta empresa, ¿vale?"
+    },
+    {
+      "index": 122,
+      "speaker": null,
+      "start": 248.799,
+      "end": 254.84,
+      "text": "Es alemana. Y esta empresa cotiza hoy a"
+    },
+    {
+      "index": 123,
+      "speaker": null,
+      "start": 251.079,
+      "end": 256.919,
+      "text": "67 con analistas en 155. Es decir, el"
+    },
+    {
+      "index": 124,
+      "speaker": null,
+      "start": 254.84,
+      "end": 258.88,
+      "text": "peor analista cree que debería valer"
+    },
+    {
+      "index": 125,
+      "speaker": null,
+      "start": 256.919,
+      "end": 261.239,
+      "text": "analista más pesimista cree que debería"
+    },
+    {
+      "index": 126,
+      "speaker": null,
+      "start": 258.88,
+      "end": 263.12,
+      "text": "valer 134, el analista más optimista"
+    },
+    {
+      "index": 127,
+      "speaker": null,
+      "start": 261.239,
+      "end": 265.479,
+      "text": "185."
+    },
+    {
+      "index": 128,
+      "speaker": null,
+      "start": 263.12,
+      "end": 267.12,
+      "text": "Y los modelos de valoración, el que peor"
+    },
+    {
+      "index": 129,
+      "speaker": null,
+      "start": 265.479,
+      "end": 268.68,
+      "text": "de todos, que aquí podríamos ver que es"
+    },
+    {
+      "index": 130,
+      "speaker": null,
+      "start": 267.12,
+      "end": 269.72,
+      "text": "el earnings power value, no sé qué"
+    },
+    {
+      "index": 131,
+      "speaker": null,
+      "start": 268.68,
+      "end": 271.36,
+      "text": "modelo de valoración es este, pero"
+    },
+    {
+      "index": 132,
+      "speaker": null,
+      "start": 269.72,
+      "end": 273.199,
+      "text": "bueno, es el único además outlier porque"
+    },
+    {
+      "index": 133,
+      "speaker": null,
+      "start": 271.36,
+      "end": 275.24,
+      "text": "todos los demás, fijaros, están por"
+    },
+    {
+      "index": 134,
+      "speaker": null,
+      "start": 273.199,
+      "end": 276.56,
+      "text": "encima de 100, pues piensan que esta"
+    },
+    {
+      "index": 135,
+      "speaker": null,
+      "start": 275.24,
+      "end": 279.32,
+      "text": "empresa debería valer mucho más. Con lo"
+    },
+    {
+      "index": 136,
+      "speaker": null,
+      "start": 276.56,
+      "end": 281.0,
+      "text": "cual, lo que hace la IA primero es"
+    },
+    {
+      "index": 137,
+      "speaker": null,
+      "start": 279.32,
+      "end": 282.68,
+      "text": "buscar en Investing Pro todas esas"
+    },
+    {
+      "index": 138,
+      "speaker": null,
+      "start": 281.0,
+      "end": 285.039,
+      "text": "empresas que tanto por analistas como"
+    },
+    {
+      "index": 139,
+      "speaker": null,
+      "start": 282.68,
+      "end": 287.759,
+      "text": "por modelos están baratas y después les"
+    },
+    {
+      "index": 140,
+      "speaker": null,
+      "start": 285.039,
+      "end": 289.199,
+      "text": "pasa lo que es ese razonamiento que he"
+    },
+    {
+      "index": 141,
+      "speaker": null,
+      "start": 287.759,
+      "end": 291.039,
+      "text": "conseguido que aprendan durante mucho"
+    },
+    {
+      "index": 142,
+      "speaker": null,
+      "start": 289.199,
+      "end": 292.759,
+      "text": "tiempo de, oye, compruébame que esto no"
+    },
+    {
+      "index": 143,
+      "speaker": null,
+      "start": 291.039,
+      "end": 294.24,
+      "text": "sea una value trap, compruébame que el"
+    },
+    {
+      "index": 144,
+      "speaker": null,
+      "start": 292.759,
+      "end": 296.47900000000004,
+      "text": "negocio sea sólido, compruébame que el"
+    },
+    {
+      "index": 145,
+      "speaker": null,
+      "start": 294.24,
+      "end": 298.88,
+      "text": "negocio pueda seguir teniendo potencia"
+    },
+    {
+      "index": 146,
+      "speaker": null,
+      "start": 296.479,
+      "end": 300.35999999999996,
+      "text": "en el futuro, etcétera, etcétera, ¿no? y"
+    },
+    {
+      "index": 147,
+      "speaker": null,
+      "start": 298.88,
+      "end": 301.88,
+      "text": "lo ha hecho con muchas, por ejemplo,"
+    },
+    {
+      "index": 148,
+      "speaker": null,
+      "start": 300.36,
+      "end": 303.72,
+      "text": "aquí vemos la conocida Aritza, una"
+    },
+    {
+      "index": 149,
+      "speaker": null,
+      "start": 301.88,
+      "end": 305.84,
+      "text": "empresa que en su día llevó para mes,"
+    },
+    {
+      "index": 150,
+      "speaker": null,
+      "start": 303.72,
+      "end": 307.88000000000005,
+      "text": "que la ha descartado por tener demasiada"
+    },
+    {
+      "index": 151,
+      "speaker": null,
+      "start": 305.84,
+      "end": 309.71999999999997,
+      "text": "deuda, es decir, no niega que sea una"
+    },
+    {
+      "index": 152,
+      "speaker": null,
+      "start": 307.88,
+      "end": 311.32,
+      "text": "empresa que a lo mejor esté barata, pero"
+    },
+    {
+      "index": 153,
+      "speaker": null,
+      "start": 309.72,
+      "end": 314.199,
+      "text": "el riesgo de la deuda le ha hecho"
+    },
+    {
+      "index": 154,
+      "speaker": null,
+      "start": 311.32,
+      "end": 316.12,
+      "text": "descartarla, ¿no? Y una vez llegado a"
+    },
+    {
+      "index": 155,
+      "speaker": null,
+      "start": 314.199,
+      "end": 318.199,
+      "text": "eso, hemos hecho una cartera de 20"
+    },
+    {
+      "index": 156,
+      "speaker": null,
+      "start": 316.12,
+      "end": 320.6,
+      "text": "empresas, ¿vale? Eh, aquí lo vemos, son"
+    },
+    {
+      "index": 157,
+      "speaker": null,
+      "start": 318.199,
+      "end": 321.88,
+      "text": "todas estas, todas estas lo que es lo"
+    },
+    {
+      "index": 158,
+      "speaker": null,
+      "start": 320.6,
+      "end": 323.759,
+      "text": "que nos garantiza pues que tiene dos"
+    },
+    {
+      "index": 159,
+      "speaker": null,
+      "start": 321.88,
+      "end": 326.88,
+      "text": "filtros. tiene el filtro primero de"
+    },
+    {
+      "index": 160,
+      "speaker": null,
+      "start": 323.759,
+      "end": 328.96000000000004,
+      "text": "saber que son empresas que están baratas"
+    },
+    {
+      "index": 161,
+      "speaker": null,
+      "start": 326.88,
+      "end": 331.0,
+      "text": "a efectos lo más objetivos posibles a"
+    },
+    {
+      "index": 162,
+      "speaker": null,
+      "start": 328.96,
+      "end": 332.88,
+      "text": "nivel de múltiplos, ¿vale? Que salen de"
+    },
+    {
+      "index": 163,
+      "speaker": null,
+      "start": 331.0,
+      "end": 336.36,
+      "text": "Investing Pro y después está ese"
+    },
+    {
+      "index": 164,
+      "speaker": null,
+      "start": 332.88,
+      "end": 337.639,
+      "text": "análisis quizá menos numérico, más de"
+    },
+    {
+      "index": 165,
+      "speaker": null,
+      "start": 336.36,
+      "end": 340.0,
+      "text": "producto, más de viabilidad de la"
+    },
+    {
+      "index": 166,
+      "speaker": null,
+      "start": 337.639,
+      "end": 342.24,
+      "text": "empresa, etcétera, etcétera, eh que he"
+    },
+    {
+      "index": 167,
+      "speaker": null,
+      "start": 340.0,
+      "end": 343.68,
+      "text": "ido ducando a estos bots durante mucho"
+    },
+    {
+      "index": 168,
+      "speaker": null,
+      "start": 342.24,
+      "end": 345.919,
+      "text": "tiempo, ¿no? Y esta es la cartera que me"
+    },
+    {
+      "index": 169,
+      "speaker": null,
+      "start": 343.68,
+      "end": 349.52,
+      "text": "ha dado, ¿vale? Eh, con ella, pues aquí"
+    },
+    {
+      "index": 170,
+      "speaker": null,
+      "start": 345.919,
+      "end": 351.96,
+      "text": "lo vemos. Em, el valor esperado a 12"
+    },
+    {
+      "index": 171,
+      "speaker": null,
+      "start": 349.52,
+      "end": 354.0,
+      "text": "meses o lo que espera la IA obtener es"
+    },
+    {
+      "index": 172,
+      "speaker": null,
+      "start": 351.96,
+      "end": 356.4,
+      "text": "por encima de un 15%, incluso en un"
+    },
+    {
+      "index": 173,
+      "speaker": null,
+      "start": 354.0,
+      "end": 358.84,
+      "text": "escenario prudente. Todo esto a juzgar"
+    },
+    {
+      "index": 174,
+      "speaker": null,
+      "start": 356.4,
+      "end": 360.23999999999995,
+      "text": "por la por la clase de empresas y el"
+    },
+    {
+      "index": 175,
+      "speaker": null,
+      "start": 358.84,
+      "end": 362.039,
+      "text": "apps que tienen, ¿vale? Aquí lo vemos"
+    },
+    {
+      "index": 176,
+      "speaker": null,
+      "start": 360.24,
+      "end": 364.40000000000003,
+      "text": "como las ha organizado, de mayor"
+    },
+    {
+      "index": 177,
+      "speaker": null,
+      "start": 362.039,
+      "end": 365.68,
+      "text": "potencial de apps a menor, ¿vale? No es"
+    },
+    {
+      "index": 178,
+      "speaker": null,
+      "start": 364.4,
+      "end": 366.96,
+      "text": "solo el Upsite, insisto, porque si"
+    },
+    {
+      "index": 179,
+      "speaker": null,
+      "start": 365.68,
+      "end": 368.599,
+      "text": "fuerais solo a Investing, a lo mejor"
+    },
+    {
+      "index": 180,
+      "speaker": null,
+      "start": 366.96,
+      "end": 372.23999999999995,
+      "text": "encontraríais empresas con más UPS, es"
+    },
+    {
+      "index": 181,
+      "speaker": null,
+      "start": 368.599,
+      "end": 374.52,
+      "text": "Upsite más eh una tesis. Y aquí vemos la"
+    },
+    {
+      "index": 182,
+      "speaker": null,
+      "start": 372.24,
+      "end": 377.199,
+      "text": "tesis que tiene, ¿vale? la tesis que ha"
+    },
+    {
+      "index": 183,
+      "speaker": null,
+      "start": 374.52,
+      "end": 380.039,
+      "text": "cogido en cada una eh de los motivos por"
+    },
+    {
+      "index": 184,
+      "speaker": null,
+      "start": 377.199,
+      "end": 381.28000000000003,
+      "text": "los cuales les han hecho e elegir esos."
+    },
+    {
+      "index": 185,
+      "speaker": null,
+      "start": 380.039,
+      "end": 382.96,
+      "text": "¿Y qué es lo que hacemos después? Bueno,"
+    },
+    {
+      "index": 186,
+      "speaker": null,
+      "start": 381.28,
+      "end": 384.919,
+      "text": "pues ya que es un bot, le hemos le hemos"
+    },
+    {
+      "index": 187,
+      "speaker": null,
+      "start": 382.96,
+      "end": 386.35999999999996,
+      "text": "dado la orden de que se meta investing"
+    },
+    {
+      "index": 188,
+      "speaker": null,
+      "start": 384.919,
+      "end": 389.0,
+      "text": "normal. Esto nos lo esta es la parte de"
+    },
+    {
+      "index": 189,
+      "speaker": null,
+      "start": 386.36,
+      "end": 392.16,
+      "text": "Investing que nos de pago. Hemos creado"
+    },
+    {
+      "index": 190,
+      "speaker": null,
+      "start": 389.0,
+      "end": 394.319,
+      "text": "esta cartera value, eh, y eh aquí están"
+    },
+    {
+      "index": 191,
+      "speaker": null,
+      "start": 392.16,
+      "end": 395.96000000000004,
+      "text": "todas las posiciones. Eh, luego tenemos"
+    },
+    {
+      "index": 192,
+      "speaker": null,
+      "start": 394.319,
+      "end": 398.44,
+      "text": "otras directrices de cómo gestionar todo"
+    },
+    {
+      "index": 193,
+      "speaker": null,
+      "start": 395.96,
+      "end": 400.75899999999996,
+      "text": "esto. E pero el objetivo es pues, oye,"
+    },
+    {
+      "index": 194,
+      "speaker": null,
+      "start": 398.44,
+      "end": 402.479,
+      "text": "seguir en el día a día todo esto, eh, y"
+    },
+    {
+      "index": 195,
+      "speaker": null,
+      "start": 400.759,
+      "end": 405.0,
+      "text": "ver cómo cómo se comportan. Aquí podemos"
+    },
+    {
+      "index": 196,
+      "speaker": null,
+      "start": 402.479,
+      "end": 406.35999999999996,
+      "text": "ver incluso el daily PNL o el net PNL"
+    },
+    {
+      "index": 197,
+      "speaker": null,
+      "start": 405.0,
+      "end": 409.56,
+      "text": "desde que desde que abren, etcétera,"
+    },
+    {
+      "index": 198,
+      "speaker": null,
+      "start": 406.36,
+      "end": 411.36,
+      "text": "etcétera. Y el objetivo va a ser e pues"
+    },
+    {
+      "index": 199,
+      "speaker": null,
+      "start": 409.56,
+      "end": 413.12,
+      "text": "poco a poco dejarle que gestione esto"
+    },
+    {
+      "index": 200,
+      "speaker": null,
+      "start": 411.36,
+      "end": 414.91900000000004,
+      "text": "como si de un gestor value se tratara."
+    },
+    {
+      "index": 201,
+      "speaker": null,
+      "start": 413.12,
+      "end": 417.4,
+      "text": "Evidentemente el challenge es bastante"
+    },
+    {
+      "index": 202,
+      "speaker": null,
+      "start": 414.919,
+      "end": 420.4,
+      "text": "eh complicado porque batir los mercados"
+    },
+    {
+      "index": 203,
+      "speaker": null,
+      "start": 417.4,
+      "end": 422.23999999999995,
+      "text": "es muy muy difícil, pero vamos a ver si"
+    },
+    {
+      "index": 204,
+      "speaker": null,
+      "start": 420.4,
+      "end": 424.0,
+      "text": "con la sabiduría de Investing Pro, que"
+    },
+    {
+      "index": 205,
+      "speaker": null,
+      "start": 422.24,
+      "end": 427.52,
+      "text": "tiene un montón de datos y un montón de"
+    },
+    {
+      "index": 206,
+      "speaker": null,
+      "start": 424.0,
+      "end": 429.36,
+      "text": "sentido, eh cómo cómo da ese potencial a"
+    },
+    {
+      "index": 207,
+      "speaker": null,
+      "start": 427.52,
+      "end": 430.639,
+      "text": "las cosas, ¿no? Y cómo son muchas cosas"
+    },
+    {
+      "index": 208,
+      "speaker": null,
+      "start": 429.36,
+      "end": 433.879,
+      "text": "lo que te dice que está infravalorado,"
+    },
+    {
+      "index": 209,
+      "speaker": null,
+      "start": 430.639,
+      "end": 436.199,
+      "text": "no es solo eh aquí fijaros todo todos"
+    },
+    {
+      "index": 210,
+      "speaker": null,
+      "start": 433.879,
+      "end": 438.68,
+      "text": "los los modelos de valoración que hay o"
+    },
+    {
+      "index": 211,
+      "speaker": null,
+      "start": 436.199,
+      "end": 440.599,
+      "text": "los analistas o lo que sea. pues este"
+    },
+    {
+      "index": 212,
+      "speaker": null,
+      "start": 438.68,
+      "end": 442.36,
+      "text": "primer filtro unido a un filtro de lo"
+    },
+    {
+      "index": 213,
+      "speaker": null,
+      "start": 440.599,
+      "end": 444.44,
+      "text": "que teóricamente es un experto. Vamos a"
+    },
+    {
+      "index": 214,
+      "speaker": null,
+      "start": 442.36,
+      "end": 445.72,
+      "text": "ver si todo esto puede batir un índice."
+    },
+    {
+      "index": 215,
+      "speaker": null,
+      "start": 444.44,
+      "end": 447.039,
+      "text": "¿Por qué os hago este vídeo? Porque me"
+    },
+    {
+      "index": 216,
+      "speaker": null,
+      "start": 445.72,
+      "end": 449.36,
+      "text": "encantaría que vosotros desde vuestra"
+    },
+    {
+      "index": 217,
+      "speaker": null,
+      "start": 447.039,
+      "end": 450.71999999999997,
+      "text": "casa elijáis vuestra a lo hagáis a mano"
+    },
+    {
+      "index": 218,
+      "speaker": null,
+      "start": 449.36,
+      "end": 451.759,
+      "text": "o lo hagáis directamente con un bot que"
+    },
+    {
+      "index": 219,
+      "speaker": null,
+      "start": 450.72,
+      "end": 453.879,
+      "text": "lo hago yo, porque el bot es"
+    },
+    {
+      "index": 220,
+      "speaker": null,
+      "start": 451.759,
+      "end": 456.47900000000004,
+      "text": "directamente el que compra todo esto."
+    },
+    {
+      "index": 221,
+      "speaker": null,
+      "start": 453.879,
+      "end": 458.44,
+      "text": "Pero estaría bien que idearas un bot e"
+    },
+    {
+      "index": 222,
+      "speaker": null,
+      "start": 456.479,
+      "end": 460.039,
+      "text": "que hiciera algún tipo de gestión de lo"
+    },
+    {
+      "index": 223,
+      "speaker": null,
+      "start": 458.44,
+      "end": 463.4,
+      "text": "que sea, ¿vale? De lo que sea. ¿Por qué?"
+    },
+    {
+      "index": 224,
+      "speaker": null,
+      "start": 460.039,
+      "end": 465.639,
+      "text": "Porque este es si lo hacemos hoy e en"
+    },
+    {
+      "index": 225,
+      "speaker": null,
+      "start": 463.4,
+      "end": 467.87899999999996,
+      "text": "12, 18, 24 meses, podremos empezar a"
+    },
+    {
+      "index": 226,
+      "speaker": null,
+      "start": 465.639,
+      "end": 469.44,
+      "text": "sacar conclusiones de si la IA, en este"
+    },
+    {
+      "index": 227,
+      "speaker": null,
+      "start": 467.879,
+      "end": 472.68,
+      "text": "caso la mezcla entre Investing Pro y una"
+    },
+    {
+      "index": 228,
+      "speaker": null,
+      "start": 469.44,
+      "end": 474.56,
+      "text": "IA, eh pues eh son capaces de gestionar"
+    },
+    {
+      "index": 229,
+      "speaker": null,
+      "start": 472.68,
+      "end": 476.159,
+      "text": "su dinero apropiadamente o no. Entonces,"
+    },
+    {
+      "index": 230,
+      "speaker": null,
+      "start": 474.56,
+      "end": 478.4,
+      "text": "eh simplemente, pues bueno, creo que es"
+    },
+    {
+      "index": 231,
+      "speaker": null,
+      "start": 476.159,
+      "end": 481.919,
+      "text": "algo bastante curioso. Por cierto, esto"
+    },
+    {
+      "index": 232,
+      "speaker": null,
+      "start": 478.4,
+      "end": 484.63899999999995,
+      "text": "lo sigo a diario y en directo, eh, todos"
+    },
+    {
+      "index": 233,
+      "speaker": null,
+      "start": 481.919,
+      "end": 486.039,
+      "text": "los días, con lo cual si alguien quiere"
+    },
+    {
+      "index": 234,
+      "speaker": null,
+      "start": 484.639,
+      "end": 487.52,
+      "text": "pasarse por aquí y ver un poco qué está"
+    },
+    {
+      "index": 235,
+      "speaker": null,
+      "start": 486.039,
+      "end": 489.0,
+      "text": "pasando, aquí no he hablado de estas"
+    },
+    {
+      "index": 236,
+      "speaker": null,
+      "start": 487.52,
+      "end": 490.919,
+      "text": "otras dos carteras, que es una cartera"
+    },
+    {
+      "index": 237,
+      "speaker": null,
+      "start": 489.0,
+      "end": 492.8,
+      "text": "value, principalmente americana que ya"
+    },
+    {
+      "index": 238,
+      "speaker": null,
+      "start": 490.919,
+      "end": 494.44,
+      "text": "lleva corriendo un poquito de tiempo y"
+    },
+    {
+      "index": 239,
+      "speaker": null,
+      "start": 492.8,
+      "end": 496.08,
+      "text": "esta cartera Gambler, que es growth,"
+    },
+    {
+      "index": 240,
+      "speaker": null,
+      "start": 494.44,
+      "end": 497.479,
+      "text": "digamos o así, de empresas más hoy, por"
+    },
+    {
+      "index": 241,
+      "speaker": null,
+      "start": 496.08,
+      "end": 499.31899999999996,
+      "text": "ejemplo, el mercado se cae y"
+    },
+    {
+      "index": 242,
+      "speaker": null,
+      "start": 497.479,
+      "end": 501.479,
+      "text": "evidentemente todas estas empresas que"
+    },
+    {
+      "index": 243,
+      "speaker": null,
+      "start": 499.319,
+      "end": 502.96000000000004,
+      "text": "no gana dinero ninguna, pues sufren"
+    },
+    {
+      "index": 244,
+      "speaker": null,
+      "start": 501.479,
+      "end": 504.52,
+      "text": "bastante. y la cartera desde Nice lleva"
+    },
+    {
+      "index": 245,
+      "speaker": null,
+      "start": 502.96,
+      "end": 506.039,
+      "text": "un 030, simplemente la volatilidad es"
+    },
+    {
+      "index": 246,
+      "speaker": null,
+      "start": 504.52,
+      "end": 508.87899999999996,
+      "text": "altísima, ¿no? Entonces, estas dos"
+    },
+    {
+      "index": 247,
+      "speaker": null,
+      "start": 506.039,
+      "end": 511.24,
+      "text": "carteras no tenían quizá una una forma"
+    },
+    {
+      "index": 248,
+      "speaker": null,
+      "start": 508.879,
+      "end": 513.2,
+      "text": "muy lógica de de invertir y en esta al"
+    },
+    {
+      "index": 249,
+      "speaker": null,
+      "start": 511.24,
+      "end": 514.9590000000001,
+      "text": "aplicarle el filtro de Investing Pro,"
+    },
+    {
+      "index": 250,
+      "speaker": null,
+      "start": 513.2,
+      "end": 517.88,
+      "text": "eh, pues ya tenemos una base bastante"
+    },
+    {
+      "index": 251,
+      "speaker": null,
+      "start": 514.959,
+      "end": 519.5989999999999,
+      "text": "sólida, que es, oye, h busquemos cosas"
+    },
+    {
+      "index": 252,
+      "speaker": null,
+      "start": 517.88,
+      "end": 521.039,
+      "text": "que estén bien y dentro de esas cosas"
+    },
+    {
+      "index": 253,
+      "speaker": null,
+      "start": 519.599,
+      "end": 522.839,
+      "text": "que estén bien, hagámosle un análisis"
+    },
+    {
+      "index": 254,
+      "speaker": null,
+      "start": 521.039,
+      "end": 526.04,
+      "text": "adicional para saber si el futuro que"
+    },
+    {
+      "index": 255,
+      "speaker": null,
+      "start": 522.839,
+      "end": 527.399,
+      "text": "tienen es eh prometedor, ¿no? Así que"
+    },
+    {
+      "index": 256,
+      "speaker": null,
+      "start": 526.04,
+      "end": 528.64,
+      "text": "nada, chicos, un vídeo rápido. Os animo"
+    },
+    {
+      "index": 257,
+      "speaker": null,
+      "start": 527.399,
+      "end": 530.36,
+      "text": "a que hagáis algo de esto. Creo que las"
+    },
+    {
+      "index": 258,
+      "speaker": null,
+      "start": 528.64,
+      "end": 532.519,
+      "text": "tecnologías es bueno que todos las"
+    },
+    {
+      "index": 259,
+      "speaker": null,
+      "start": 530.36,
+      "end": 534.12,
+      "text": "utilicemos y es bueno que cuanto antes"
+    },
+    {
+      "index": 260,
+      "speaker": null,
+      "start": 532.519,
+      "end": 535.88,
+      "text": "entendamos si sirven o no sirven y no"
+    },
+    {
+      "index": 261,
+      "speaker": null,
+      "start": 534.12,
+      "end": 538.8,
+      "text": "hay mejor manera que pues de una forma"
+    },
+    {
+      "index": 262,
+      "speaker": null,
+      "start": 535.88,
+      "end": 540.079,
+      "text": "de estas e y dentro de un año, año y"
+    },
+    {
+      "index": 263,
+      "speaker": null,
+      "start": 538.8,
+      "end": 542.3599999999999,
+      "text": "medio vendremos y presentaremos los"
+    },
+    {
+      "index": 264,
+      "speaker": null,
+      "start": 540.079,
+      "end": 545.12,
+      "text": "resultados. Solamente eso, chicos. Si os"
+    },
+    {
+      "index": 265,
+      "speaker": null,
+      "start": 542.36,
+      "end": 546.399,
+      "text": "ha gustado me podéis dejar un like, e"
+    },
+    {
+      "index": 266,
+      "speaker": null,
+      "start": 545.12,
+      "end": 547.5600000000001,
+      "text": "algún comentario, lo que queráis y"
+    },
+    {
+      "index": 267,
+      "speaker": null,
+      "start": 546.399,
+      "end": 550.839,
+      "text": "nosotros nos vemos en el siguiente"
+    },
+    {
+      "index": 268,
+      "speaker": null,
+      "start": 547.56,
+      "end": 550.8389999999999,
+      "text": "vídeo. Se despide la pizarra. Okay."
+    }
+  ]
+}

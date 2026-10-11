@@ -1,0 +1,28 @@
+{
+  "wireMagic": "pb3",
+  "pens": [{}],
+  "wsWinStyles": [{}],
+  "events": [
+    {
+      "tStartMs": 0,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "Hoy hablamos de burbujas", "aAppend": "ANDRÉS"}]
+    },
+    {"tStartMs": 1500, "dDurationMs": 500, "segs": [{"utf8": "\n"}]},
+    {
+      "tStartMs": 2000,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "y del gasto de capital.", "aAppend": "ANDRÉS"}]
+    },
+    {
+      "tStartMs": 4000,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "El ciclo de tipos", "aAppend": "INVITADA"}]
+    },
+    {
+      "tStartMs": 6000,
+      "dDurationMs": 2500,
+      "segs": [{"utf8": "no ha roto todavía.", "aAppend": "INVITADA"}]
+    }
+  ]
+}

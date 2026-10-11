@@ -1,0 +1,23 @@
+{
+  "wireMagic": "pb3",
+  "pens": [{}],
+  "wsWinStyles": [{}],
+  "events": [
+    {
+      "tStartMs": 0,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "hello world"}]
+    },
+    {"tStartMs": 1500, "dDurationMs": 500, "segs": [{"utf8": "\n"}]},
+    {
+      "tStartMs": 2000,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "hello world and"}]
+    },
+    {
+      "tStartMs": 4000,
+      "dDurationMs": 2000,
+      "segs": [{"utf8": "hello world and more"}]
+    }
+  ]
+}
