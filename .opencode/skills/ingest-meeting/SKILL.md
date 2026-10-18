@@ -10,8 +10,9 @@ description: Usar cuando el usuario pegue una transcripción de reunión en el c
 Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`.
 
 - Ruta de la skill: `.opencode/skills/ingest-meeting/`.
-- Ruta de las carpetas de reunión: `<project-root>/YYYY-MM-DD-<topic-slug>/`.
-
+- Ruta de las carpetas de reunión: `<project-root>/<categoria>/YYYY-MM-DD-<topic-slug>/`.
+- La categoría vale `ai` para charlas de inteligencia artificial y `finance` para charlas de finanzas, inversión o economía.
+- El agente elige la categoría por el tema de la reunión antes de crear la carpeta.
 El nombre de la carpeta de reunión usa el patrón `YYYY-MM-DD-<topic-slug>`.
 
 - Escribe el patrón en minúsculas.
