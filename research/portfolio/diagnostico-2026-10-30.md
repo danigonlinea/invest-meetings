@@ -1,15 +1,22 @@
 ---
-title: "Cartera de fondos — Auditoría"
+title: "Diagnóstico de la cartera — 30/10/2026"
 date: 2026-10-30
-type: portfolio-audit
+type: portfolio-diagnosis
 category: finance
-tags: [cartera, fondos, rebalanceo, auditoria]
+tags: [cartera, fondos, diagnostico, auditoria]
 status: final
+related: [research/portfolio/cartera-actual.md]
 ---
-# Cartera de fondos — Auditoría 30/10/2026
+# Diagnóstico de la cartera — 30/10/2026
+
+> Las **posiciones y saldos** viven en `cartera-actual.md` (congelado, no se edita). Este fichero
+> es el diagnóstico: qué está bien, qué está mal, macro y criterios de decisión. Las propuestas de
+> rebalanceo, en `propuestas/`.
 
 **Total:** 70.000 € · **9 fondos** · **Plataforma:** MyInvestor · **Inversor:** español · **Horizonte:** largo plazo
 **Fecha de auditoría:** 30/10/2026 · **Datos de fondos:** VDOS/quefondos a 28/10/2026 + factsheets oficiales · **Macro:** BCE/Eurostat/Morningstar/MSCI a oct-2026
+
+> ⚠️ **Nota importante:** El inversor tiene **además** una cartera indexada **Rock** de MyInvestor por 30.000 € (gestión automatizada, perfil agresivo, 78% RV / 22% RF) y 10.000 € de colchón en Groupama. Ver `cartera-actual.md` para el estado consolidado real (90.000 € invertibles) y `propuestas/` para las alternativas de rebalanceo.
 
 > Nota: el máximo drawdown (máxima caída) no está publicado para la mayoría de los fondos (solo Carmignac −17,54% y Gamma −4,73%). El rating Morningstar oficial se incluye donde la gestora lo publica; donde no, se usa el rating VDOS de quefondos como proxy.
 
