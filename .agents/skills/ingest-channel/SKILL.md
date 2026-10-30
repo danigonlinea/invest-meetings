@@ -9,9 +9,12 @@ description: Usar cuando el usuario pida los vídeos nuevos de un canal de YouTu
 
 Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`.
 
-- Ruta de la skill: `.opencode/skills/ingest-channel/`.
-- Ruta de las carpetas de reunión: `<project-root>/YYYY-MM-DD-<topic-slug>/`.
-- Ruta del informe: `<project-root>/informe-canal-<canal-slug>-<YYYY-MM-DD>.md`.
+- Ruta de la skill: `.agents/skills/ingest-channel/`.
+- Ruta de las carpetas de reunión: `<project-root>/<categoria>/YYYY-MM-DD-<topic-slug>/`.
+- La categoría vale `ai` o `finance`. La regla de la categoría es la de `ingest-meeting`; el agente la elige por el tema del vídeo antes de descargar.
+- Ruta del informe: `<project-root>/research/reports/informe-canal-<canal-slug>-<YYYY-MM-DD>.md`.
+- Ruta de las revisiones adversariales: `<project-root>/research/revisions/`.
+- Ruta de los artefactos analíticos: `<project-root>/research/`.
 
 Dependencias:
 
@@ -36,6 +39,7 @@ El agente necesita 3 datos.
 
 Pregunta al usuario solo cuando falta el número de vídeos o cuando falta el canal.
 
+- Elige la categoría `ai` o `finance` por el tema de cada vídeo. No la preguntes.
 - No inventes nunca una fecha.
 - No inventes nunca un idioma.
 
@@ -54,7 +58,7 @@ Aplica estas reglas.
 
 ## Paso 3: Salta los vídeos ya ingeridos
 
-Lee el campo `source.video_id` de cada `<carpeta>*/transcript.json` del repositorio antes de cualquier descarga.
+Lee el campo `source.video_id` de cada `<categoria>/*/transcript.json` del repositorio antes de cualquier descarga.
 
 - El agente comprueba el identificador de cada vídeo nuevo contra la lista de identificadores ya presentes.
 - El agente salta el vídeo cuya identificación ya está presente.
@@ -63,25 +67,27 @@ Lee el campo `source.video_id` de cada `<carpeta>*/transcript.json` del reposito
 Ejemplo con `python3 -c`:
 
 ```bash
-python3 -c "import glob,json; [print(p, json.load(open(p))['source']['video_id']) for p in glob.glob('*/transcript.json')]"
+python3 -c "import glob,json; [print(p, json.load(open(p))['source']['video_id']) for p in glob.glob('*/*/transcript.json')]"
 ```
 
 Ejemplo con `grep`:
 
 ```bash
-grep -o '"video_id": "[^"]*"' */transcript.json
+grep -o '"video_id": "[^"]*"' */*/transcript.json
 ```
 
 ## Paso 4: Descarga y transcribe
 
-Entra en la carpeta `ytpipe` y ejecuta este comando, un vídeo cada vez.
+Entra en la raíz del repositorio y ejecuta este comando, un vídeo cada vez.
 
 ```bash
-uv run ytpipe fetch <url> --no-open
+uv run --project ytpipe ytpipe fetch <url> --out <categoria> --no-open
 ```
 
 Aplica estas reglas.
 
+- Cambia `<categoria>` por `ai` o `finance`.
+- Pasa siempre `--out`. Sin esa opción, `ytpipe` escribe la carpeta en la raíz del repositorio, fuera de `ai/` o `finance/`.
 - No ejecutes las descargas en paralelo. YouTube responde con HTTP 429.
 - `ytpipe` ya reintenta después de un límite de peticiones.
 - Cuando `ytpipe` falla con `no subtitle available`, el vídeo no tiene pista de subtítulos. Reporta ese vídeo y continúa con el siguiente.
@@ -91,7 +97,7 @@ Aplica estas reglas.
 
 ## Paso 5: Escribe el resumen de cada vídeo
 
-Aplica la skill `ingest-meeting` en `.opencode/skills/ingest-meeting/SKILL.md` para cada carpeta.
+Aplica la skill `ingest-meeting` en `.agents/skills/ingest-meeting/SKILL.md` para cada carpeta.
 
 - La skill `ingest-meeting` define la lista de secciones de `summary.md` y el nombre del archivo. No repitas esa lista aquí.
 
@@ -119,9 +125,28 @@ Aplica estas reglas a la sección `## Tips para el inversor`.
 - Marca cada inferencia con la palabra `inferida`.
 - No inventes nunca una cifra que la transcripción no contiene.
 
+La sección `## Fondos y acciones mencionados` del resumen sigue el formato enriquecido de `ingest-meeting` (`Paso 3 bis`): qué se nombra, con qué cifra y con qué postura. No la reduzcas a una lista de nombres, porque el informe del canal se construye sobre esas tablas.
+
+## Paso 5 bis: Audita los resúmenes antes del informe
+
+Contrasta cada `summary.md` con su transcripción antes de escribir el informe. Este paso es obligatorio cuando el usuario pide conclusiones sólidas o revisión adversarial.
+
+Busca en este orden.
+
+1. **Conclusiones invertidas.** Es el error más caro: comprobar cada viñeta de `## Conclusiones para el inversor` contra la frase del hablante.
+2. **Cifras inventadas dentro de un tip.** Ningún número puede estar en un tip si no está en la transcripción.
+3. **Unidades y magnitudes.** Comparar puntos básicos con porcentajes, `trillion` con billón, segundos con minutos.
+4. **Hedges eliminados.** «Me lo invento», «si no me equivoco» y «no sé» forman parte del dato.
+5. **Atribuciones.** Con `has_speaker_labels: false`, marcar `no atribuible con certeza` cuando el contexto no baste.
+6. **Aritmética de los propios hablantes.** Si su cuenta no cuadra, decirlo en la revisión, no reproducirla como dato.
+
+Corrige el `summary.md` y deja la trazabilidad en un archivo aparte. No escribas el archivo de auditoría dentro de la carpeta de la reunión: esa carpeta guarda `transcript.json`, el `.txt` y `summary.md`. Los archivos de revisión/aditoría van a `<project-root>/research/revisions/`.
+
 ## Paso 6: Escribe el informe del canal
 
-Escribe el informe en la raíz del repositorio con este nombre: `informe-canal-<canal-slug>-<YYYY-MM-DD>.md`. La fecha es la fecha de la ejecución.
+Antes de escribir el cuerpo, abre el archivo con un bloque de frontmatter YAML (title, date, type: channel-report, category, tags, status).
+
+Escribe el informe en `research/reports/` con este nombre: `informe-canal-<canal-slug>-<YYYY-MM-DD>.md`. La fecha es la fecha de la ejecución.
 
 Escribe estas secciones, en este orden.
 
@@ -142,7 +167,15 @@ Escribe estas secciones, en este orden.
 
 6. `## Discrepancias entre vídeos`. Una viñeta por desacuerdo, o la frase `No hay discrepancias.`.
 7. `## Riesgos que menciona el canal`.
-8. `## Fondos y acciones mencionados en el canal`. Une las tablas que ya guardan los resúmenes. No repitas la búsqueda que ya hizo `.opencode/skills/ingest-meeting/LOOKUP.md`.
+8. `## Menciones con cifras y postura`. Una tabla con estas columnas.
+
+| Nombre | Tipo | Cifra que da el hablante | Postura | Vídeo y minuto |
+| --- | --- | --- | --- | --- |
+| `<nombre>` | fondo, ETF, acción, bono | `<cifra>` | `<postura>` | `<fecha>` y `<mm:ss>` |
+
+Debajo, dos listas: los vehículos con ISIN o ticker confirmado, y los nombres que el canal descarta con su motivo.
+
+9. `## Qué se puede comprar hoy según el canal`. Solo las filas con postura `recomienda` o `idea a estudiar`, con el vehículo concreto cuando el vídeo lo nombre. Una frase de encuadre antes de la lista dice que no es asesoramiento y qué interés comercial tiene cada hablante (gestión, consulta, plataforma o afiliación). Si no hay ninguna fila con esas posturas, escribe `El canal no recomienda ningún vehículo concreto en esta ejecución.`
 
 Aplica estas reglas al escribir el informe.
 
@@ -150,6 +183,9 @@ Aplica estas reglas al escribir el informe.
 - No inventes nunca un dato.
 - No repitas un tip que ningún resumen guarda.
 - Marca cada inferencia con la palabra `inferida`.
+- No escribas la postura `recomienda` sin una cita literal del hablante.
+- Un nombre mencionado sin cifra no se cae del informe: va en la lista de menciones sin cifras.
+- Coloca el interés comercial del hablante al lado de la mención, no en un aviso al final.
 
 ## Paso 7: Informa al usuario
 

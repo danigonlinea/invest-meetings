@@ -1,3 +1,12 @@
+---
+title: "La Pizarra de Andrés: "Da miedo, pero la IA puede solucionar la economía" (Juan "
+date: 2026-10-15
+type: meeting-summary
+category: ai
+tags: [ai, meeting, transcript]
+status: final
+---
+
 # La Pizarra de Andrés: "Da miedo, pero la IA puede solucionar la economía" (Juan Santamaría)
 
 - **Fecha:** 2026-10-15

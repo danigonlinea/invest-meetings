@@ -9,9 +9,11 @@ description: Usar cuando el usuario pegue una transcripción de reunión en el c
 
 Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`.
 
-- Ruta de la skill: `.opencode/skills/ingest-meeting/`.
+- Ruta de la skill: `.agents/skills/ingest-meeting/`.
 - Ruta de las carpetas de reunión: `<project-root>/<categoria>/YYYY-MM-DD-<topic-slug>/`.
-- La categoría vale `ai` para charlas de inteligencia artificial y `finance` para charlas de finanzas, inversión o economía.
+- Ruta de los informes y artefactos analíticos: `<project-root>/research/reports/`, `<project-root>/research/portfolio/`, `<project-root>/research/revisions/`.
+- Ruta de las referencias: `<project-root>/reference/`.
+- Todo artefacto `.md` lleva frontmatter YAML (title, date, type, category, tags, status). Ver `README.md` del repositorio.
 - El agente elige la categoría por el tema de la reunión antes de crear la carpeta.
 El nombre de la carpeta de reunión usa el patrón `YYYY-MM-DD-<topic-slug>`.
 
@@ -77,13 +79,20 @@ Lee el archivo con `python3 -c` o con la herramienta `read`.
 - `stats` trae `segment_count`, `chunk_count`, `speaker_count`, `word_count`, `character_count` y `time_span_seconds`.
 - El agente usa `chunks` como unidad de lectura. Cada chunk trae `text`, `text_start`, `text_end`, `time_start_iso`, `time_end_iso` y `speakers`.
 - El texto plano del vídeo sale de unir `chunks[].text` con un espacio. `text_start` y `text_end` son las posiciones en ese texto.
-- El agente usa `segments` cuando necesita una cita exacta.
+- El agente usa `segments` cuando necesita una cita exacta. Cada segment trae `index`, `speaker`, `start`, `end` y `text`.
+- Cuando `speakers` no existe, el vídeo tiene una sola voz. El agente lo dice en la nota y atribuye todo a `speaker-1`.
+- Cuando `speakers` existe, el agente usa el campo `id` de cada entrada. El campo `name` vale `null` porque YouTube no da nombres.
+- El campo `segments[].speaker` vale `null` cuando el vídeo no tiene etiquetas. El agente nunca inventa un hablante.
+
+No escribas en el resumen ningún número que no aparezca en `transcript.json` o en el texto de la transcripción.
+
+**Criterio de finalización:** el agente puede nombrar la fecha, el canal, la duración, el número de hablantes y el número de capítulos sin abrir ningún otro archivo.
 
 ## Paso 3 bis: Busca fondos y acciones mencionados
 
 Este paso se aplica cuando la reunión menciona fondos de inversión o acciones de empresas.
 
-El agente analiza el texto completo del transcript (junto de todos los `chunks`) y busca:
+El agente analiza el texto completo del transcript (la unión de todos los `chunks`) y busca:
 
 1. **Fondos de inversión**: `fondo`, `fund`, `ETF`, `SICAV`, `EAF`, `GESTIÓN`, `gestora`, `management`.
 2. **Acciones/empresas**: `acción`, `actions`, `stock`, `acciones`, `cotización`, `carta`, `título`, `bono`, `company`, `empresa`, `compañía`, `holding`, `sociedad`.
@@ -102,56 +111,77 @@ El agente analiza el texto completo del transcript (junto de todos los `chunks`)
 
 1. Extrae el texto completo del transcript.
 2. Busca nombres de fondos y empresas (usando las palabras clave anteriores).
-3. Para cada nombre encontrado, hace una petición a la fuente pública adecuada.
-4. Guarda los resultados en la parte de abajo.
-5. Añade una tabla con la información al resumen.
+3. Para cada nombre, localiza la frase donde aparece y anota el minuto.
+4. Guarda la cifra que el hablante asocia a ese nombre: precio sobre valor en libros, PER, dividendo, descuento sobre activos, comisión, CDS, probabilidad, rentabilidad.
+5. Determina la postura del hablante hacia ese nombre con una frase literal.
+6. Para cada fondo, hace una petición a la fuente pública adecuada.
+7. Escribe la sección con el formato de abajo.
 
 ### Formato de la sección `## Fondos y acciones mencionados`
 
-```markdown
-### Fondos de inversión
+La sección responde tres preguntas sin abrir la transcripción: qué se nombra, con qué cifras y qué opina el hablante. Cuatro subsecciones, en este orden.
 
-| Campo | Valor |
+#### `### Vehículos con identificador`
+
+Fondos, ETF, SICAV y bonos con nombre o ISIN.
+
+| Nombre | Tipo | ISIN o ticker | Clase | Comisión o coste | Cifra clave del hablante | Postura | Minuto |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `<nombre>` | fondo, ETF, bono | `<ISIN>` o `no verificado` | `<clase>` | `<dato>` o `no verificado` | `<la cifra que dice>` o `sin cifras` | `<postura>` | `<mm:ss>` |
+
+Después de la tabla, una ficha por fondo con los campos públicos: gestor, fecha de constitución, categoría, estrategia, patrimonio, rentabilidad y fuente. Si el vídeo no nombra ningún vehículo, escribe una línea con ese hecho en lugar de una fila con guiones.
+
+#### `### Acciones y empresas con cifras`
+
+| Empresa | Ticker | Cifra que da el hablante | Contexto de la mención | Postura | Minuto |
+| --- | --- | --- | --- | --- | --- |
+| `<nombre>` | `<ticker>` o `no verificado` | `<cifra>` | `<qué se decía de ella>` | `<postura>` | `<mm:ss>` |
+
+#### `### Menciones sin cifras`
+
+Una viñeta por nombre que aparece sin ningún número asociado: `<nombre>` — qué se dijo y en qué minuto.
+
+#### `### Lo que el vídeo descarta y por qué`
+
+Una viñeta por nombre que el hablante rechaza o critica: `<nombre>` — motivo y minuto.
+
+#### Valores de `Postura`
+
+Usa exactamente uno.
+
+| Valor | Cuándo |
 | --- | --- |
-| Nombre del fondo | `<nombre>` |
-| ISIN | `<ISIN>` |
-| Gestor | `<gestor>` |
-| Fecha de constitución | `<fecha>` |
-| Categoría | `<categoría>` |
-| Estrategia | `<estrategia>` |
-| Comisiones | `<gestion>% (fija), <variable>% (variable)` |
-| Patrimonio | `<patrimonio>` EUR |
-| Rentabilidad | `<rentabilidad>` |
-| Fuente | `<URL>` |
+| `recomienda` | Solo si hay una frase en la que el hablante lo recomienda. |
+| `en cartera` | El hablante dice que lo tiene o que lo ha comprado. |
+| `idea a estudiar` | Lo presenta como candidato sin posición. |
+| `ejemplo negativo` | Lo usa para explicar qué no comprar. |
+| `criticado por caro` | Lo compara por coste o por valoración. |
+| `neutro` | Se nombra sin juicio. |
 
-### Acciones de empresas
-
-| Campo | Valor |
-| --- | --- |
-| Nombre de la empresa | `<nombre>` |
-| Sector | `<sector>` |
-| Código de cotización | `<código>` |
-| ISIN | `<ISIN>` |
-| Rentabilidad media anual | `<rentabilidad>%` |
-| Volatilidad | `<volatilidad>%` |
-| Dividendo | `<dividendo>` |
-| Fuente | `<URL>` |
-```
+Añade `(lo comercializa)` cuando el hablante vende el vehículo que describe.
 
 ### Criterio de finalización
 
-- Cada nombre detectado aparece en la sección.
-- No se inventan datos. Si no se encuentra un dato, se escribe `no verificado`.
-- El agente registra la URL de cada fuente consultada. Cada segment trae `index`, `speaker`, `start`, `end` y `text`.
-- Cuando `speakers` no existe, el vídeo tiene una sola voz. El agente lo dice en la nota y atribuye todo a `speaker-1`.
-- Cuando `speakers` existe, el agente usa el campo `id` de cada entrada. El campo `name` vale `null` porque YouTube no da nombres.
-- El campo `segments[].speaker` vale `null` cuando el vídeo no tiene etiquetas. El agente nunca inventa un hablante.
-
-No escribas en el resumen ningún número que no aparezca en `transcript.json` o en el texto de la transcripción.
-
-**Criterio de finalización:** el agente puede nombrar la fecha, el canal, la duración, el número de hablantes y el número de capítulos sin abrir ningún otro archivo.
+- Cada nombre detectado aparece una sola vez, en la subsección que le toca.
+- Cada fila con cifras contiene la cifra literal del hablante y su minuto.
+- `recomienda` solo aparece cuando hay una cita que lo sostiene.
+- No se inventan datos. Si falta un dato público, se escribe `no verificado`; si el hablante no da cifra, `sin cifras`.
+- El agente registra la URL de cada fuente consultada.
 
 ## Paso 3: Escribe el resumen
+
+Antes de escribir el cuerpo, abre el archivo con un bloque de frontmatter YAML:
+
+```yaml
+---
+title: "<título del vídeo o reunión>"
+date: <YYYY-MM-DD>
+type: meeting-summary
+category: <ai o finance>
+tags: [<temas principales>]
+status: final
+---
+```
 
 Escribe `summary.md` con estas secciones, en este orden.
 
@@ -167,7 +197,7 @@ Escribe `summary.md` con estas secciones, en este orden.
 6. `## Ideas y tesis`, una viñeta por tesis. Pon al hablante en negrita al principio de cada viñeta.
 7. `## Preguntas abiertas y temas pendientes`, una viñeta por pregunta sin resolver.
 8. `## Citas textuales`, cada cita entre comillas dobles. Pon una raya larga detrás de la cita. Escribe el contexto después de la raya larga.
-9. `## Fondos y acciones mencionados` (opcional, solo si el transcript menciona fondos o acciones). Ver `Paso 3 bis` para el proceso de búsqueda.
+9. `## Fondos y acciones mencionados` (opcional, solo si el transcript menciona fondos o acciones). Usa el formato enriquecido de `Paso 3 bis`: qué se nombra, con qué cifras y con qué postura. Una tabla de nombres no basta.
 
 Aplica estas reglas al escribir el resumen.
 
@@ -183,23 +213,17 @@ Aplica estas reglas al escribir el resumen.
 
 ## Paso 4: Documenta los errores de reconocimiento
 
-Escribe una sección `## Advertencias sobre la transcripción` como la última parte del resumen.
+Escribe una sección `## Advertencias sobre la transcripción` como la última parte del resumen. La sección `## Fondos y acciones mencionados` del Paso 3 bis va justo antes.
 
-> El agente puede nombrar la fecha, el canal, la duración, el número de hablantes y el número de capítulos sin abrir ningún otro archivo.
+Aplica estas reglas a esta sección.
 
-> Los nombres de fondos y acciones buscados en el `Paso 3 bis` se escriben en su propia sección (`## Fondos y acciones mencionados`) antes de esta sección.
+- Abre un encabezado `###` por tipo de error: nombres propios, palabras corruptas y marcas de tiempo.
+- Escribe una viñeta por error. Cada viñeta da la forma que aparece en la transcripción y la forma correcta.
+- Añade el minuto cuando `segments` da la hora del error.
+- No inventes nunca una corrección. Si no puedes confirmar la forma correcta, escribe `no verificado`.
+- Deja la transcripción intacta salvo que el usuario pida corregirla. Ver `## Guardarraíles`.
 
-Aplica estas reglas al escribir el resumen.
-
-- Escribe el resumen en español.
-- Mantén las frases cortas.
-- Atribuye cada tesis a su hablante.
-- Marca cada inferencia sobre el hablante con la palabra `inferida`.
-- No inventes nunca una cifra que el transcript no contiene.
-- Saca cada número del resumen del transcript.
-- El agente usa `source.description` del vídeo para los temas. Esa descripción suele traer la agenda y la lista de valores.
-
-**Criterio de finalización:** comprueba que cada sección de la lista anterior existe en el archivo.
+**Criterio de finalización:** la sección existe, es la última del archivo, y cada error corregido en el Paso 6 aparece en ella.
 
 ## Paso 5: Muestra los puntos clave
 
@@ -253,6 +277,18 @@ Lee los otros archivos `summary.md` antes de escribir el resumen nuevo.
 - El agente informa al usuario si cambió el transcript. La transcripción automática suele traer errores de reconocimiento.
 - El agente nunca borra `transcript.json`. Ese archivo es la fuente de la verdad para el resumen.
 - El agente nunca corrige el JSON. Si el JSON tiene un error, el agente lo dice al usuario y deja el archivo intacto.
+
+### Reglas de precisión
+
+- No inventes nunca una cifra dentro de un tip. Si el hablante no da el número, escribe el criterio sin número: «reducir las fuentes», no «dos o tres gestores».
+- No atribuyas una frase a un hablante cuando el audio no trae etiquetas y el contexto es ambiguo. Escribe `no atribuible con certeza` en vez de elegir un nombre.
+- Comprueba la magnitud de las cifras del audio: «trillón» en una charla en español suele ser el *trillion* inglés, es decir, un billón. Anota la forma del audio y la equivalencia.
+- Conserva los hedges del hablante («si no me equivoco», «me lo invento», «no sé cuáles son»). Suprimirlos endurece la tesis y falsea el resumen.
+- Revisa las conclusiones del resumen contra la transcripción: es donde más se invierte el énfasis de lo que dijo el invitado.
+- No conviertas una descripción en instrucción de cartera. Si la acción la deduce el agente, escribe `inferida` en la celda.
+- Una mención no es una recomendación. Usa `recomienda` solo con la frase que lo diga; si el hablante lo tiene, es `en cartera`; si lo usa como ejemplo de lo que no compra, es `ejemplo negativo`.
+- Cada nombre propio de empresa o fondo lleva la cifra que el hablante le asocia y el minuto. Un nombre sin cifra va a `### Menciones sin cifras`, no a la tabla.
+- Cuando el hablante vende el producto que describe, escríbelo al lado: `(lo comercializa)`. El lector tiene que ver el interés en la misma fila, no en un aviso al final.
 
 Usa el texto pegado tal cual cuando el texto ya está normalizado.
 

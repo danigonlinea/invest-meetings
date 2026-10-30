@@ -1,3 +1,12 @@
+---
+title: "La Pizarra de Andrés: respuestas a las preguntas más importantes sobre inversión"
+date: 2026-10-16
+type: meeting-summary
+category: finance
+tags: [finance, meeting, transcript]
+status: final
+---
+
 # La Pizarra de Andrés: respuestas a las preguntas más importantes sobre inversión
 
 - **Fecha:** 2026-10-16

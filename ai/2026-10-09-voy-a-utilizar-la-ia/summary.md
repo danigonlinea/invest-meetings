@@ -1,3 +1,12 @@
+---
+title: "La Pizarra de Andrés: Voy a utilizar la IA para invertir mi dinero"
+date: 2026-10-09
+type: meeting-summary
+category: ai
+tags: [ai, meeting, transcript]
+status: final
+---
+
 # La Pizarra de Andrés: Voy a utilizar la IA para invertir mi dinero
 
 - **Fecha:** 2026-10-09

@@ -1,3 +1,12 @@
+---
+title: "La Pizarra de Andrés: Robeco Emerging Markets frente al indexado de emergentes"
+date: 2026-10-13
+type: meeting-summary
+category: finance
+tags: [finance, meeting, transcript]
+status: final
+---
+
 # La Pizarra de Andrés: Robeco Emerging Markets frente al indexado de emergentes
 
 - **Fecha:** 2026-10-13

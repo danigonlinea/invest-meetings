@@ -1,3 +1,12 @@
+---
+title: "La Pizarra de Andrés: renta fija y retransmisión de capital"
+date: 2026-10-11
+type: meeting-summary
+category: finance
+tags: [finance, meeting, transcript]
+status: final
+---
+
 # La Pizarra de Andrés: renta fija y retransmisión de capital
 
 - **Fecha:** 2026-10-11

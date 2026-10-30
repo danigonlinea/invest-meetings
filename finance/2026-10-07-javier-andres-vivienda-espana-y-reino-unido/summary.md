@@ -1,3 +1,12 @@
+---
+title: "Encuentro: Javier y Andrés — vivienda en España y Reino Unido"
+date: 2026-10-07
+type: meeting-summary
+category: finance
+tags: [finance, meeting, transcript]
+status: final
+---
+
 # Encuentro: Javier y Andrés — vivienda en España y Reino Unido
 
 - **Fecha:** 2026-10-07

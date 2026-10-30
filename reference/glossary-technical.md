@@ -1,3 +1,11 @@
+---
+title: "Glosario técnico"
+date: 2026-10-11
+type: reference
+category: cross
+tags: [glosario, terminologia]
+status: final
+---
 # Glosario de tecnicismos financieros e invertidos
 
 Términos financieros, de inversión y de mercado que se van mencionando en las reuniones del repositorio `investing-meetings`, con su definición y la reunión de donde viene. Complementa al `glossary.md` (ponentes) y se mantiene vigente con cada nueva reunión.

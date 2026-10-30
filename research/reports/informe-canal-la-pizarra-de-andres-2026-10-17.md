@@ -1,3 +1,11 @@
+---
+title: "Informe del canal La Pizarra de Andrés (2026-10-17)"
+date: 2026-10-17
+type: channel-report
+category: finance
+tags: [la-pizarra-de-andres, youtube, mercados, inversion]
+status: final
+---
 # Informe del canal La Pizarra de Andrés (2026-10-17)
 
 - **Canal:** La Pizarra de Andrés

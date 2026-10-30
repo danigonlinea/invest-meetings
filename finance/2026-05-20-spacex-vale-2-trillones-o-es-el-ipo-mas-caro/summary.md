@@ -1,3 +1,12 @@
+---
+title: "Resumen: SpaceX — ¿Vale 2 trillones o es el IPO más caro de la historia?"
+date: 2026-05-20
+type: meeting-summary
+category: finance
+tags: [finance, meeting, transcript]
+status: final
+---
+
 # Resumen: SpaceX — ¿Vale 2 trillones o es el IPO más caro de la historia?
 
 - **Fecha:** 2026-05-20

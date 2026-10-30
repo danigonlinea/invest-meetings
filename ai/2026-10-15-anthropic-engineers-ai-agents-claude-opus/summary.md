@@ -1,3 +1,12 @@
+---
+title: "Ingenieros de Anthropic: cómo se construyen los agentes de IA con Claude"
+date: 2026-10-15
+type: meeting-summary
+category: ai
+tags: [ai, meeting, transcript]
+status: final
+---
+
 # Ingenieros de Anthropic: cómo se construyen los agentes de IA con Claude
 
 - **Fecha:** 2026-10-15

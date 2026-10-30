@@ -1,3 +1,11 @@
+---
+title: "Glosario"
+date: 2026-10-11
+type: reference
+category: cross
+tags: [glosario, terminologia]
+status: final
+---
 # Glosario de ponentes y nombres
 
 Índice de personas, canales, entidades y variaciones de escritura que aparecen en las reuniones del repositorio `investing-meetings`. Sirve para indexar nombres y ponentes futuros y mantener estandarizados los nombres y las atribuciones en los resúmenes (`summary.md`) y en las transcripciones.
