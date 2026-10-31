@@ -66,9 +66,9 @@ def build(rows: list[tuple[str, dict]]) -> str:
     lines = [
         "# Índice del repositorio",
         "",
-        "Mapa de todos los artefactos del repositorio `investing-meetings`. Lo genera "
-        "`python3 tools/build_index.py` a partir del frontmatter YAML; no editar a mano.",
-        "Un agente IA lee este archivo primero y después abre solo lo que necesita.",
+        "Artefactos del repositorio `investing-meetings`, generados con "
+        "`python3 tools/build_index.py` desde el frontmatter YAML. No editar a mano.",
+        "Orden de lectura: `AGENTS.md` → este índice → el artefacto concreto.",
         "",
         "| Ruta | Tipo | Categoría | Fecha | Título | Tags |",
         "| --- | --- | --- | --- | --- | --- |",
@@ -89,17 +89,8 @@ def build(rows: list[tuple[str, dict]]) -> str:
         "",
         "**Total de artefactos indexados:** {}".format(len(rows)),
         "",
-        "## Cómo llegar al dato",
-        "",
-        "| Pregunta | Ruta |",
-        "| --- | --- |",
-        "| ¿Cómo está mi cartera y qué hago con ella? | `finance/portfolio/` (empieza por `cartera-actual.md`) |",
-        "| ¿Qué dicen los vídeos de La Pizarra de Andrés? | `finance/la-pizarra-de-andres/` o `ai/la-pizarra-de-andres/` |",
-        "| ¿Qué dicen los webinars de MyInvestor? | `finance/myinvestor-webinars/catalogo.md` y luego la carpeta del webinar |",
-        "| ¿Resumen consolidado del canal o revisión adversarial? | `finance/reports/`, `finance/revisions/` |",
-        "| ¿Cómo se llama alguien, un canal o una entidad? | `reference/glossary.md` |",
-        "",
-        "Detalle de cada ruta, reglas de precisión y flujo de ingesta: `AGENTS.md`.",
+        "Enrutado por pregunta y reglas de precisión: `AGENTS.md`. Convenciones de nombres y "
+        "comandos: `README.md`.",
         "",
     ]
     return "\n".join(lines)

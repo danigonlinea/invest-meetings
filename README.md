@@ -2,62 +2,82 @@
 
 Repositorio personal de vídeos, webinars, transcripciones y análisis de inversión e IA.
 
-## Dos carpetas, dos materias
+> **Agentes:** el enrutado por pregunta está en `AGENTS.md`. Este archivo es la referencia de
+> estructura, convenciones y comandos.
 
-| Carpeta | Qué guarda |
-| --- | --- |
-| `finance/` | Inversión y finanzas: cartera personal, vídeos de La Pizarra de Andrés, webinars de MyInvestor, El Arte de Invertir, informes. |
-| `ai/` | IA: agentes, modelos y economía de la IA. |
+## Estructura
 
-Dentro de cada categoría hay una subcarpeta por **fuente** (`la-pizarra-de-andres/`,
-`myinvestor-webinars/`, `el-arte-de-invertir/`) y dentro una carpeta por reunión
-`YYYY-MM-DD-<slug>/` con `transcript.json`, la transcripción `.txt` y `summary.md`.
+```
+finance/                        inversión y finanzas
+  la-pizarra-de-andres/         vídeos del canal La Pizarra de Andrés
+  myinvestor-webinars/          webinars y entrevistas de MyInvestor
+    catalogo.md                 catálogo generado de los 141 webinars y su estado
+  el-arte-de-invertir/          canal El Arte de Invertir
+  portfolio/                    cartera personal: estado, diagnóstico y propuestas
+    README.md                   qué es cada fichero y cuál se puede editar
+  reports/                      informes de canal, síntesis, revisiones adversariales
+  revisions/                    auditorías de resúmenes concretos
+ai/                             IA
+  la-pizarra-de-andres/         vídeos de IA del mismo canal
+  reports/ · revisions/         se crean con el primer informe de IA
+reference/                      glosario de ponentes y nombres, glosario técnico
+tools/                          catálogo de webinars, generador de INDEX.md
+ytpipe/                         CLI que descarga la transcripción de YouTube
+.agents/skills/                 skills del agente
+AGENTS.md · INDEX.md            enrutado · índice generado de artefactos
+```
 
-- `finance/portfolio/` — la cartera personal: estado congelado, diagnóstico y propuestas.
-- `finance/reports/`, `finance/revisions/` — informes de canal, síntesis y auditorías.
-- `reference/` — glosarios (ponentes y nombres, terminología técnica).
-- `tools/` — scripts de apoyo (catálogo de webinars, generador de `INDEX.md`).
-- `ytpipe/` — CLI que descarga transcripciones de YouTube.
+Cada vídeo o reunión es una carpeta `YYYY-MM-DD-<slug>/` dentro de la subcarpeta de su fuente:
 
-## Por dónde empieza un agente
-
-1. **`AGENTS.md`** — enrutado: qué carpeta mirar según la pregunta, convenciones y reglas de
-   precisión.
-2. **`INDEX.md`** — índice generado de todos los artefactos (ruta, tipo, categoría, fecha,
-   título, tags).
-3. El archivo concreto (`summary.md`, informe o ficha de cartera).
+| Archivo | Contenido | ¿Se edita? |
+| --- | --- | --- |
+| `transcript.json` | Transcripción estructurada (fuente de verdad) | **Nunca** |
+| `invest-<canal>-<slug>.txt` | Transcripción literal con marcas de tiempo | Solo si lo pide el usuario |
+| `summary.md` | Resumen con frontmatter YAML | Sí, es el entregable |
 
 ## Convenciones
 
 - **Nombres de carpeta:** `YYYY-MM-DD-<slug-kebab-sin-acentos>`, ≤6 palabras tras la fecha.
 - **Nombres de archivo:** `YYYY-MM-DD-<slug>.md`, kebab-case, sin acentos. Los resúmenes de
   reunión se llaman siempre `summary.md`.
-- **Frontmatter YAML** en todo `.md`: `title`, `date`, `type`, `category`, `tags`, `status`
-  (y `related`/`source` cuando aplica). Permite filtrar sin leer el cuerpo.
-- **Tipos (`type`):** `meeting-summary`, `channel-report`, `synthesis`, `revision`,
-  `portfolio-audit`, `portfolio-snapshot`, `portfolio-diagnosis`, `portfolio-proposal`,
-  `portfolio-analysis`, `portfolio-review`, `reference`.
-- **Categorías (`category`):** `ai`, `finance`, `cross`.
-- Un artefacto = un tema. Para temas relacionados, usar `related:` en el frontmatter en lugar
-  de duplicar.
+- **Frontmatter YAML** obligatorio en todo `.md`:
+
+  ```yaml
+  ---
+  title: "…"
+  date: YYYY-MM-DD
+  type: meeting-summary | channel-report | synthesis | revision | portfolio-audit
+      | portfolio-snapshot | portfolio-diagnosis | portfolio-proposal
+      | portfolio-analysis | portfolio-review | reference
+  category: ai | finance | cross
+  tags: [ … ]
+  status: draft | final | living
+  source: "…"        # opcional, URL del vídeo o de la reunión
+  related: [ … ]     # opcional, rutas del repositorio
+  ---
+  ```
+
+- Un artefacto = un tema. Para relacionar, usa `related:` en lugar de duplicar contenido.
 - Tras crear, mover o borrar artefactos: `python3 tools/build_index.py`.
 
 ## Skills
 
-- `.agents/skills/ingest-meeting/` — resumen de una reunión o vídeo individual.
-- `.agents/skills/ingest-channel/` — últimos N vídeos de un canal de YouTube + informe.
-- `.agents/skills/ingest-webinars/` — webinars y entrevistas de MyInvestor.
+Las skills viven en `.agents/skills/` (`ingest-meeting`, `ingest-channel`,
+`ingest-webinars`); cuándo usar cada una, en `AGENTS.md`.
 
-## Utilidades
+## Comandos
 
 ```bash
+# transcripción de un vídeo suelto (siempre con --out)
 uv run --project ytpipe ytpipe fetch <url> --out finance/<fuente> --no-open
-python3 tools/myinvestor_webinars.py list        # catálogo de webinars de MyInvestor
-python3 tools/myinvestor_webinars.py pendientes  # webinars aún sin ingerir
-python3 tools/build_index.py                     # regenera INDEX.md
+
+# webinars de MyInvestor
+python3 tools/myinvestor_webinars.py list        # TSV: id, título, post
+python3 tools/myinvestor_webinars.py pendientes  # solo los que faltan por ingerir
+python3 tools/myinvestor_webinars.py catalogo    # reescribe finance/myinvestor-webinars/catalogo.md
+
+# índice del repositorio
+python3 tools/build_index.py
 ```
 
-## Fuentes de verdad
-
-- `transcript.json` es la fuente de verdad de cada reunión. No se reescribe.
-- Los resúmenes (`summary.md`) se generan a partir de la transcripción y no inventan cifras.
+No descargar en paralelo: YouTube responde con HTTP 429.
