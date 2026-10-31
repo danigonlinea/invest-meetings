@@ -1,39 +1,61 @@
 # investing-meetings
 
-Repositorio personal de reuniones, vídeos y análisis de inversión (IA y finanzas).
+Repositorio personal de vídeos, webinars, transcripciones y análisis de inversión e IA.
 
-## Mapa del repositorio
+## Dos carpetas, dos materias
 
-- `ai/` — reuniones y vídeos de inteligencia artificial. Cada subcarpeta es una reunión (`YYYY-MM-DD-<slug>/`) con `transcript.json`, `.txt` y `summary.md`.
-- `finance/` — reuniones y vídeos de finanzas/inversión/economía (misma estructura).
-- `research/` — artefactos analíticos standalone:
-  - `research/reports/` — informes de canal, síntesis, revisiones adversariales.
-  - `research/portfolio/` — auditorías de cartera.
-  - `research/revisions/` — revisiones y auditorías de resúmenes.
-- `reference/` — glosarios y material de referencia.
-- `ytpipe/` — CLI para descargar transcripciones de YouTube.
-- `.agents/skills/` — skills del agente (ingest-meeting, ingest-channel).
+| Carpeta | Qué guarda |
+| --- | --- |
+| `finance/` | Inversión y finanzas: cartera personal, vídeos de La Pizarra de Andrés, webinars de MyInvestor, El Arte de Invertir, informes. |
+| `ai/` | IA: agentes, modelos y economía de la IA. |
+
+Dentro de cada categoría hay una subcarpeta por **fuente** (`la-pizarra-de-andres/`,
+`myinvestor-webinars/`, `el-arte-de-invertir/`) y dentro una carpeta por reunión
+`YYYY-MM-DD-<slug>/` con `transcript.json`, la transcripción `.txt` y `summary.md`.
+
+- `finance/portfolio/` — la cartera personal: estado congelado, diagnóstico y propuestas.
+- `finance/reports/`, `finance/revisions/` — informes de canal, síntesis y auditorías.
+- `reference/` — glosarios (ponentes y nombres, terminología técnica).
+- `tools/` — scripts de apoyo (catálogo de webinars, generador de `INDEX.md`).
+- `ytpipe/` — CLI que descarga transcripciones de YouTube.
+
+## Por dónde empieza un agente
+
+1. **`AGENTS.md`** — enrutado: qué carpeta mirar según la pregunta, convenciones y reglas de
+   precisión.
+2. **`INDEX.md`** — índice generado de todos los artefactos (ruta, tipo, categoría, fecha,
+   título, tags).
+3. El archivo concreto (`summary.md`, informe o ficha de cartera).
 
 ## Convenciones
 
 - **Nombres de carpeta:** `YYYY-MM-DD-<slug-kebab-sin-acentos>`, ≤6 palabras tras la fecha.
-- **Nombres de archivo:** `YYYY-MM-DD-<slug>.md`, kebab-case, sin acentos.
-- **Frontmatter YAML** en todo `.md`: `title`, `date`, `type`, `category`, `tags`, `status` (y `related`/`source` cuando aplica). Permite filtrar sin leer el cuerpo.
-- **Tipos (`type`):** `meeting-summary`, `channel-report`, `synthesis`, `revision`, `portfolio-audit`, `reference`.
+- **Nombres de archivo:** `YYYY-MM-DD-<slug>.md`, kebab-case, sin acentos. Los resúmenes de
+  reunión se llaman siempre `summary.md`.
+- **Frontmatter YAML** en todo `.md`: `title`, `date`, `type`, `category`, `tags`, `status`
+  (y `related`/`source` cuando aplica). Permite filtrar sin leer el cuerpo.
+- **Tipos (`type`):** `meeting-summary`, `channel-report`, `synthesis`, `revision`,
+  `portfolio-audit`, `portfolio-snapshot`, `portfolio-diagnosis`, `portfolio-proposal`,
+  `portfolio-analysis`, `portfolio-review`, `reference`.
 - **Categorías (`category`):** `ai`, `finance`, `cross`.
-- Un artefacto = un tema. Para temas relacionados, usar `related:` en el frontmatter en lugar de duplicar.
-
-## Navegación para agentes IA
-
-1. Lee `INDEX.md` primero: lista todos los artefactos con ruta, tipo, fecha, título y tags.
-2. Filtra por `type`/`tags`/`date` en el frontmatter; abre solo los archivos relevantes.
-3. Las reuniones viven en `ai/` y `finance/`; su resumen es `summary.md` dentro de la carpeta.
-4. Los artefactos analíticos viven en `research/`.
+- Un artefacto = un tema. Para temas relacionados, usar `related:` en el frontmatter en lugar
+  de duplicar.
+- Tras crear, mover o borrar artefactos: `python3 tools/build_index.py`.
 
 ## Skills
 
-- `.agents/skills/ingest-meeting/` — ingesta de una reunión o vídeo individual.
-- `.agents/skills/ingest-channel/` — ingesta de los últimos N vídeos de un canal de YouTube.
+- `.agents/skills/ingest-meeting/` — resumen de una reunión o vídeo individual.
+- `.agents/skills/ingest-channel/` — últimos N vídeos de un canal de YouTube + informe.
+- `.agents/skills/ingest-webinars/` — webinars y entrevistas de MyInvestor.
+
+## Utilidades
+
+```bash
+uv run --project ytpipe ytpipe fetch <url> --out finance/<fuente> --no-open
+python3 tools/myinvestor_webinars.py list        # catálogo de webinars de MyInvestor
+python3 tools/myinvestor_webinars.py pendientes  # webinars aún sin ingerir
+python3 tools/build_index.py                     # regenera INDEX.md
+```
 
 ## Fuentes de verdad
 

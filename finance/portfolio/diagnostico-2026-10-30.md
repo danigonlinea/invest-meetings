@@ -5,7 +5,7 @@ type: portfolio-diagnosis
 category: finance
 tags: [cartera, fondos, diagnostico, auditoria]
 status: final
-related: [research/portfolio/cartera-actual.md]
+related: [finance/portfolio/cartera-actual.md]
 ---
 # Diagnóstico de la cartera — 30/10/2026
 

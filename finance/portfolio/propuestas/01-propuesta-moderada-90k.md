@@ -5,7 +5,7 @@ type: portfolio-proposal
 category: finance
 tags: [cartera, propuesta, rebalanceo, rock, perfil-moderado, myinvestor]
 status: en-debate
-related: [research/portfolio/cartera-actual.md, research/portfolio/propuestas/03-revision-adversarial.md, research/portfolio/propuestas/02-propuesta-consolidada-100k.md]
+related: [finance/portfolio/cartera-actual.md, finance/portfolio/propuestas/03-revision-adversarial.md, finance/portfolio/propuestas/02-propuesta-consolidada-100k.md]
 ---
 
 # Propuesta A — moderada (90k invertibles) · 30/10/2026
@@ -183,12 +183,12 @@ Revisión anual; rebalanceo si algún bloque se desvía >5 pp.
 
 - MyInvestor MCP a 28/10/2026: fichas de los 9 fondos actuales, de los candidatos y de Rock
   (composición, comisiones por capas, serie anual 2008-2026).
-- `research/reports/sintesis-inversor-2026-10-30.md`: tesis y citas de Renta 4, Ábaco, Carlos y
+- `finance/reports/sintesis-inversor-2026-10-30.md`: tesis y citas de Renta 4, Ábaco, Carlos y
   Andrés (18-25/10/2026).
-- `research/portfolio/cartera-actual.md`: saldos, pesos, TER y TIR verificados.
-- `research/portfolio/diagnostico-2026-10-30.md`: duración, rating medio, max drawdown y macro
+- `finance/portfolio/cartera-actual.md`: saldos, pesos, TER y TIR verificados.
+- `finance/portfolio/diagnostico-2026-10-30.md`: duración, rating medio, max drawdown y macro
   (BCE 2,50%, inflación 3,8%, €STR 2,44%, STOXX 13,6x, S&P 18,7x).
-- `research/portfolio/propuestas/03-revision-adversarial.md`: errores de cálculo de la propuesta B.
+- `finance/portfolio/propuestas/03-revision-adversarial.md`: errores de cálculo de la propuesta B.
 
 > No es asesoramiento financiero. Es una cartera construida sobre datos de fichas y sobre lo que
 > cinco personas dicen en vídeo, con sus intereses comerciales a la vista.

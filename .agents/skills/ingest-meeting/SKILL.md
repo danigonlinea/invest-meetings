@@ -10,11 +10,12 @@ description: Usar cuando el usuario pegue una transcripción de reunión en el c
 Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`.
 
 - Ruta de la skill: `.agents/skills/ingest-meeting/`.
-- Ruta de las carpetas de reunión: `<project-root>/<categoria>/YYYY-MM-DD-<topic-slug>/`.
-- Ruta de los informes y artefactos analíticos: `<project-root>/research/reports/`, `<project-root>/research/portfolio/`, `<project-root>/research/revisions/`.
+- Ruta de las carpetas de reunión: `<project-root>/<categoria>/<fuente>/YYYY-MM-DD-<topic-slug>/`.
+- La categoría vale `finance` o `ai`. La fuente es el canal o el programa del vídeo: `la-pizarra-de-andres`, `myinvestor-webinars`, `el-arte-de-invertir`. Ver `AGENTS.md`.
+- Ruta de los informes y artefactos analíticos: `<project-root>/<categoria>/reports/`, `<project-root>/<categoria>/revisions/` y, para la cartera personal, `<project-root>/finance/portfolio/`.
 - Ruta de las referencias: `<project-root>/reference/`.
 - Todo artefacto `.md` lleva frontmatter YAML (title, date, type, category, tags, status). Ver `README.md` del repositorio.
-- El agente elige la categoría por el tema de la reunión antes de crear la carpeta.
+- El agente elige la categoría y la fuente por el tema y el canal de la reunión antes de crear la carpeta. No crea una fuente nueva si ya existe una subcarpeta para ese canal.
 El nombre de la carpeta de reunión usa el patrón `YYYY-MM-DD-<topic-slug>`.
 
 - Escribe el patrón en minúsculas.
@@ -22,6 +23,8 @@ El nombre de la carpeta de reunión usa el patrón `YYYY-MM-DD-<topic-slug>`.
 - No escribas acentos.
 - No escribas guiones bajos.
 - Escribe 6 palabras como máximo después de la fecha.
+
+Al terminar la ejecución, ejecuta `python3 tools/build_index.py` para regenerar `INDEX.md`.
 
 ## Paso 1: Pregunta los datos que faltan
 
@@ -180,6 +183,7 @@ type: meeting-summary
 category: <ai o finance>
 tags: [<temas principales>]
 status: final
+source: "<URL del vídeo o de la reunión>"
 ---
 ```
 

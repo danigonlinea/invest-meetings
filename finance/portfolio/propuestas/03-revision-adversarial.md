@@ -5,7 +5,7 @@ type: portfolio-review
 category: finance
 tags: [cartera, fondos, rebalanceo, adversarial, rock, myinvestor]
 status: final
-related: [research/portfolio/propuestas/02-propuesta-consolidada-100k.md, research/portfolio/cartera-actual.md]
+related: [finance/portfolio/propuestas/02-propuesta-consolidada-100k.md, finance/portfolio/cartera-actual.md]
 ---
 
 # Revisión adversarial — 30/10/2026

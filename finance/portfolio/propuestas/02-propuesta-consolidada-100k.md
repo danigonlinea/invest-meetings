@@ -5,7 +5,7 @@ type: portfolio-proposal
 category: finance
 tags: [cartera, propuesta, rebalanceo, rock, agresivo, myinvestor]
 status: con-erratas
-related: [research/portfolio/propuestas/03-revision-adversarial.md, research/portfolio/cartera-actual.md]
+related: [finance/portfolio/propuestas/03-revision-adversarial.md, finance/portfolio/cartera-actual.md]
 ---
 
 # Propuesta B — consolidada agresiva (100.000 €) · 30/10/2026
@@ -360,6 +360,6 @@ vs. TER ponderado actual de la cartera auditada: 0,774% → reducción del ~65%.
 
 ---
 
-*Nota creada el 30/10/2026. Parte de `research/portfolio/cartera-actual.md`.*
+*Nota creada el 30/10/2026. Parte de `finance/portfolio/cartera-actual.md`.*
 *Datos de Rock: MyInvestor MCP (search_portfolios). Datos de fondos: MyInvestor MCP (search_funds).*
 *Dato clave: la cartera Rock tiene 30.000 € adicionales que NO estaban incluidos en la auditoría original (70.000 €).*

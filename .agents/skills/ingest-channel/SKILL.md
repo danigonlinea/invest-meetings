@@ -10,11 +10,11 @@ description: Usar cuando el usuario pida los vídeos nuevos de un canal de YouTu
 Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`.
 
 - Ruta de la skill: `.agents/skills/ingest-channel/`.
-- Ruta de las carpetas de reunión: `<project-root>/<categoria>/YYYY-MM-DD-<topic-slug>/`.
-- La categoría vale `ai` o `finance`. La regla de la categoría es la de `ingest-meeting`; el agente la elige por el tema del vídeo antes de descargar.
-- Ruta del informe: `<project-root>/research/reports/informe-canal-<canal-slug>-<YYYY-MM-DD>.md`.
-- Ruta de las revisiones adversariales: `<project-root>/research/revisions/`.
-- Ruta de los artefactos analíticos: `<project-root>/research/`.
+- Ruta de las carpetas de reunión: `<project-root>/<categoria>/<fuente>/YYYY-MM-DD-<topic-slug>/`.
+- La categoría vale `ai` o `finance`. La fuente es el canal: `la-pizarra-de-andres`, `myinvestor-webinars`, `el-arte-de-invertir`. La regla de la categoría y de la fuente es la de `ingest-meeting`; el agente las elige por el tema del vídeo antes de descargar. Ver `AGENTS.md`.
+- Ruta del informe: `<project-root>/<categoria>/reports/informe-canal-<canal-slug>-<YYYY-MM-DD>.md`.
+- Ruta de las revisiones adversariales: `<project-root>/<categoria>/revisions/`.
+- Ruta de los artefactos analíticos: `<project-root>/<categoria>/reports/`.
 
 Dependencias:
 
@@ -58,7 +58,7 @@ Aplica estas reglas.
 
 ## Paso 3: Salta los vídeos ya ingeridos
 
-Lee el campo `source.video_id` de cada `<categoria>/*/transcript.json` del repositorio antes de cualquier descarga.
+Lee el campo `source.video_id` de cada `<categoria>/*/*/transcript.json` del repositorio antes de cualquier descarga.
 
 - El agente comprueba el identificador de cada vídeo nuevo contra la lista de identificadores ya presentes.
 - El agente salta el vídeo cuya identificación ya está presente.
@@ -67,13 +67,13 @@ Lee el campo `source.video_id` de cada `<categoria>/*/transcript.json` del repos
 Ejemplo con `python3 -c`:
 
 ```bash
-python3 -c "import glob,json; [print(p, json.load(open(p))['source']['video_id']) for p in glob.glob('*/*/transcript.json')]"
+python3 -c "import glob,json; [print(p, json.load(open(p))['source']['video_id']) for p in glob.glob('*/*/*/transcript.json')]"
 ```
 
 Ejemplo con `grep`:
 
 ```bash
-grep -o '"video_id": "[^"]*"' */*/transcript.json
+grep -o '"video_id": "[^"]*"' */*/*/transcript.json
 ```
 
 ## Paso 4: Descarga y transcribe
@@ -81,13 +81,13 @@ grep -o '"video_id": "[^"]*"' */*/transcript.json
 Entra en la raíz del repositorio y ejecuta este comando, un vídeo cada vez.
 
 ```bash
-uv run --project ytpipe ytpipe fetch <url> --out <categoria> --no-open
+uv run --project ytpipe ytpipe fetch <url> --out <categoria>/<fuente> --no-open
 ```
 
 Aplica estas reglas.
 
-- Cambia `<categoria>` por `ai` o `finance`.
-- Pasa siempre `--out`. Sin esa opción, `ytpipe` escribe la carpeta en la raíz del repositorio, fuera de `ai/` o `finance/`.
+- Cambia `<categoria>/<fuente>` por la combinación real: `finance/la-pizarra-de-andres`, `ai/la-pizarra-de-andres` o `finance/el-arte-de-invertir`.
+- Pasa siempre `--out` con la subcarpeta de la fuente. Sin esa opción, `ytpipe` escribe la carpeta en la raíz del repositorio, fuera de `finance/` y `ai/`.
 - No ejecutes las descargas en paralelo. YouTube responde con HTTP 429.
 - `ytpipe` ya reintenta después de un límite de peticiones.
 - Cuando `ytpipe` falla con `no subtitle available`, el vídeo no tiene pista de subtítulos. Reporta ese vídeo y continúa con el siguiente.
@@ -140,13 +140,13 @@ Busca en este orden.
 5. **Atribuciones.** Con `has_speaker_labels: false`, marcar `no atribuible con certeza` cuando el contexto no baste.
 6. **Aritmética de los propios hablantes.** Si su cuenta no cuadra, decirlo en la revisión, no reproducirla como dato.
 
-Corrige el `summary.md` y deja la trazabilidad en un archivo aparte. No escribas el archivo de auditoría dentro de la carpeta de la reunión: esa carpeta guarda `transcript.json`, el `.txt` y `summary.md`. Los archivos de revisión/aditoría van a `<project-root>/research/revisions/`.
+Corrige el `summary.md` y deja la trazabilidad en un archivo aparte. No escribas el archivo de auditoría dentro de la carpeta de la reunión: esa carpeta guarda `transcript.json`, el `.txt` y `summary.md`. Los archivos de revisión/aditoría van a `<project-root>/<categoria>/revisions/`.
 
 ## Paso 6: Escribe el informe del canal
 
 Antes de escribir el cuerpo, abre el archivo con un bloque de frontmatter YAML (title, date, type: channel-report, category, tags, status).
 
-Escribe el informe en `research/reports/` con este nombre: `informe-canal-<canal-slug>-<YYYY-MM-DD>.md`. La fecha es la fecha de la ejecución.
+Escribe el informe en `<categoria>/reports/` con este nombre: `informe-canal-<canal-slug>-<YYYY-MM-DD>.md`. La fecha es la fecha de la ejecución.
 
 Escribe estas secciones, en este orden.
 
@@ -194,6 +194,7 @@ Da al usuario una lista numerada de 8 a 12 puntos clave en el chat.
 - Escribe la lista en el chat.
 - No escribas la lista en un archivo.
 - Nombra cada archivo que la ejecución creó.
+- Ejecuta `python3 tools/build_index.py` para regenerar `INDEX.md`.
 
 ## Guardarraíles
 
