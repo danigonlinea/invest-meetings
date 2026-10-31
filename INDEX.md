@@ -5,16 +5,16 @@ Orden de lectura: `AGENTS.md` → este índice → el artefacto concreto.
 
 | Ruta | Tipo | Categoría | Fecha | Título | Tags |
 | --- | --- | --- | --- | --- | --- |
+| `finance/portfolio/propuesta-actual.md` | portfolio-proposal | finance | 2026-10-31 | Propuesta de cartera — 47,8% RV (moderada, 90k invertibles) | [cartera, propuesta, rebalanceo, rock, perfil-moderado, myinvestor, traspasos] |
+| `finance/portfolio/analisis/videos-2026-10-30.md` | portfolio-analysis | finance | 2026-10-31 | Cartera vs fuentes: veredicto posición por posición | [cartera, fondos, analisis, la-pizarra-de-andres, myinvestor] |
 | `finance/myinvestor-webinars/catalogo.md` | reference | finance | 2026-10-31 | Catálogo de webinars de MyInvestor | [myinvestor, webinars, catalogo, youtube] |
 | `finance/reports/sintesis-inversor-2026-10-30.md` | synthesis | finance | 2026-10-30 | Síntesis para el inversor · La Pizarra de Andrés, 18-25 oct 2026 | [la-pizarra-de-andres, sintesis, inversion] |
 | `finance/reports/revision-adversarial-2026-10-30.md` | revision | finance | 2026-10-30 | Revisión adversarial de los 5 resúmenes (2026-10-30) | [la-pizarra-de-andres, revision-adversarial, verificacion] |
 | `finance/reports/informe-canal-la-pizarra-de-andres-2026-10-30.md` | channel-report | finance | 2026-10-30 | Informe del canal La Pizarra de Andrés (2026-10-30) | [la-pizarra-de-andres, youtube, mercados, inversion] |
-| `finance/portfolio/propuestas/03-revision-adversarial.md` | portfolio-review | finance | 2026-10-30 | Revisión adversarial — propuesta B (consolidada agresiva) | [cartera, fondos, rebalanceo, adversarial, rock, myinvestor] |
-| `finance/portfolio/propuestas/02-propuesta-consolidada-100k.md` | portfolio-proposal | finance | 2026-10-30 | Propuesta B — consolidada agresiva (100k, RV 63%) | [cartera, propuesta, rebalanceo, rock, agresivo, myinvestor] |
-| `finance/portfolio/propuestas/01-propuesta-moderada-90k.md` | portfolio-proposal | finance | 2026-10-30 | Propuesta A — moderada (90k invertibles, Rock incluida) | [cartera, propuesta, rebalanceo, rock, perfil-moderado, myinvestor] |
 | `finance/portfolio/diagnostico-2026-10-30.md` | portfolio-diagnosis | finance | 2026-10-30 | Diagnóstico de la cartera — 30/10/2026 | [cartera, fondos, diagnostico, auditoria] |
 | `finance/portfolio/cartera-actual.md` | portfolio-snapshot | finance | 2026-10-30 | Cartera actual — estado congelado a 30/10/2026 | [cartera, snapshot, myinvestor, rock, congelado] |
-| `finance/portfolio/analisis/videos-2026-10-30.md` | portfolio-analysis | finance | 2026-10-30 | Cartera vs los 5 vídeos transcritos (18-25 oct 2026) | [cartera, fondos, analisis, transcritos, la-pizarra-de-andres] |
+| `finance/portfolio/archivo/revision-adversarial-propuesta-b-2026-10-30.md` | portfolio-review | finance | 2026-10-30 | Revisión adversarial — propuesta B (consolidada agresiva) | [cartera, fondos, rebalanceo, adversarial, rock, myinvestor] |
+| `finance/portfolio/archivo/propuesta-b-100k-2026-10-30.md` | portfolio-proposal | finance | 2026-10-30 | Propuesta B — consolidada agresiva (100k, RV 63%) | [cartera, propuesta, rebalanceo, rock, agresivo, myinvestor] |
 | `finance/la-pizarra-de-andres/2026-10-25-la-renta-fija-puede-salvarnos-en-estos-momentos-abaco-capital/summary.md` | meeting-summary | finance | 2026-10-25 | La Pizarra de Andrés: renta fija, estanflación y la oportunidad que espera en el | [finance, meeting, transcript] |
 | `finance/la-pizarra-de-andres/2026-10-23-la-actualidad-de-los-mercados-financieros-refleja-un-elevado-riesgo/summary.md` | meeting-summary | finance | 2026-10-23 | La Pizarra de Andrés: la actualidad refleja un riesgo elevado | [finance, meeting, transcript] |
 | `finance/reports/auditoria-2026-10-22-gestor-renta-4.md` | revision | finance | 2026-10-22 | Auditoría adversarial del resumen de Renta 4 (2026-10-22) | [renta-4, revision] |

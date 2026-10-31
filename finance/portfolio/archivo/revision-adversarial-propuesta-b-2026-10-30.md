@@ -4,17 +4,20 @@ date: 2026-10-30
 type: portfolio-review
 category: finance
 tags: [cartera, fondos, rebalanceo, adversarial, rock, myinvestor]
-status: final
-related: [finance/portfolio/propuestas/02-propuesta-consolidada-100k.md, finance/portfolio/cartera-actual.md]
+status: archived
+related: [finance/portfolio/archivo/propuesta-b-100k-2026-10-30.md, finance/portfolio/cartera-actual.md]
 ---
 
 # Revisión adversarial — 30/10/2026
 
-> Ataque a la propuesta B (`02-propuesta-consolidada-100k.md`) y a la cartera de partida. Los
+> **Archivado (31/10/2026).** Revisión adversarial que tumbó la propuesta B; sus hallazgos dieron
+> forma a la cartera vigente (`../propuesta-actual.md`).
+
+> Ataque a la propuesta B (`propuesta-b-100k-2026-10-30.md`) y a la cartera de partida. Los
 > hallazgos de §3 y §7 son los que gobiernan la propuesta A (`01-propuesta-moderada-90k.md`).
 
 **Objeto:** atacar (no describir) la cartera actual de 70.000 € (9 fondos) y la propuesta del
-documento `02-propuesta-consolidada-100k.md` (70.000 € manuales + 30.000 € en Rock de MyInvestor).
+documento `propuesta-b-100k-2026-10-30.md` (70.000 € manuales + 30.000 € en Rock de MyInvestor).
 **Datos:** fichas MyInvestor MCP a 28/10/2026 (TER, rentabilidades, volatilidad, allocation,
 top países/sectores) + factsheets 30/09/2026 para TIR/duración + macro del audit (BCE 2,50%,
 inflación 3,8%, €STR 2,44%).

@@ -11,36 +11,22 @@ related: [finance/portfolio/cartera-actual.md]
 
 > Las **posiciones y saldos** viven en `cartera-actual.md` (congelado, no se edita). Este fichero
 > es el diagnóstico: qué está bien, qué está mal, macro y criterios de decisión. Las propuestas de
-> rebalanceo, en `propuestas/`.
+> rebalanceo, en `propuesta-actual.md`.
 
 **Total:** 70.000 € · **9 fondos** · **Plataforma:** MyInvestor · **Inversor:** español · **Horizonte:** largo plazo
 **Fecha de auditoría:** 30/10/2026 · **Datos de fondos:** VDOS/quefondos a 28/10/2026 + factsheets oficiales · **Macro:** BCE/Eurostat/Morningstar/MSCI a oct-2026
 
-> ⚠️ **Nota importante:** El inversor tiene **además** una cartera indexada **Rock** de MyInvestor por 30.000 € (gestión automatizada, perfil agresivo, 78% RV / 22% RF) y 10.000 € de colchón en Groupama. Ver `cartera-actual.md` para el estado consolidado real (90.000 € invertibles) y `propuestas/` para las alternativas de rebalanceo.
+> ⚠️ **Nota importante:** El inversor tiene **además** una cartera indexada **Rock** de MyInvestor por 30.000 € (gestión automatizada, perfil agresivo, 78% RV / 22% RF) y 10.000 € de colchón en Groupama. Ver `cartera-actual.md` para el estado consolidado real (90.000 € invertibles) y `propuesta-actual.md` para la cartera propuesta.
 
 > Nota: el máximo drawdown (máxima caída) no está publicado para la mayoría de los fondos (solo Carmignac −17,54% y Gamma −4,73%). El rating Morningstar oficial se incluye donde la gestora lo publica; donde no, se usa el rating VDOS de quefondos como proxy.
 
 ---
 
-## 1. Posiciones y ponderaciones
+## 1. Datos de las posiciones
 
-| ISIN | Fondo | Categoría VDOS | € | % | TER | YTD 2026 | 3a (anual.) | Vol 1a | Rating MS / VDOS |
-|---|---|---|---:|---:|---:|---:|---:|---:|---|
-| IE00BL1GVT98 | Neuberger Short Duration Euro Bond U | RF euro corto plazo | 22.000 | 31,43% | 0,36% | −0,41% | 4,66% | 2,51% | 5★ / 5★ |
-| LU1694789451 | DNCA Invest Alpha Bonds A | Ret. absoluto | 13.000 | 18,57% | 1,31%+ | +2,34% | 4,16% | 2,68% | 4★ / 2★ |
-| LU1623762843 | Carmignac Portfolio Credit A | Deuda privada global | 12.000 | 17,14% | 1,20%+ | −1,76% | 6,21% | 3,86% | n/v / 5★ |
-| FR0000989626 | Groupama Trésorerie IC | Monetario euro plus | 10.000 | 14,29% | 0,16% | +1,85% | 2,97% | 0,04% | n/r / 4★ |
-| ES0140794001 | Gamma Global, FI A | Mixto flexible | 8.000 | 11,43% | 0,86%+ | +7,20% | 9,10% | 2,56% | 5★ / 4★ |
-| ES0165243025 | MyInvestor Value, FI C | RVI global valor | 2.000 | 2,86% | 1,45%+ | +13,72% | n/a | 17,76% | 5★ / ND |
-| LU1598719752 | Cobas International Fund P | RVI global | 1.000 | 1,43% | 1,73% | +20,21% | 101,87% | 14,85% | 5★ / 5★ |
-| IE00018YKVN0 | NB Next Gen Space Economy (hedged) | RVI otros sectores | 1.000 | 1,43% | 1,72% | +6,06% | n/a | 35,85% | ND / ND |
-| LU1815002040 | UBS MSCI China All Shares Universal | RVI China | 1.000 | 1,43% | 0,30% | −7,43% | 22,60% | 8,53% | n/v / 2★ |
-| **TOTAL** | | | **70.000** | **100,00%** | | | | | |
-
-- TER = gastos recurrentes (OCF, factsheet oficial). El símbolo **+** indica comisión de éxito adicional sobre resultados positivos.
-- 3a = rentabilidad anualizada a 3 años (factsheet oficial a 30/09/2026; quefondos para los que no hay dato oficial).
-- Vol 1a = volatilidad a 1 año (quefondos, 28/10/2026).
-- Rating MS = Morningstar en estrellas (factsheet/gestora); VDOS = rating VDOS de quefondos. n/v = no verificado, n/r = no rated.
+> Las posiciones, saldos y pesos están en `cartera-actual.md` (fotografía congelada) y **no se
+> repiten aquí**. Esta sección guarda solo lo que no cabe allí: características de cada fondo y
+> datos de mercado.
 
 **Rentabilidades acumuladas a 1 año:** NB −0,16% · DNCA +2,05% · Carmignac −1,49% · Groupama +2,22% · Gamma +6,89% · MyInv +17,39% · Cobas +29,40% · NB Space +2,64% · UBS China −11,31%.
 
@@ -66,32 +52,23 @@ related: [finance/portfolio/cartera-actual.md]
 
 ---
 
-## 2. Agregado por clase de activo
+## 2. Dónde está el dinero
 
-| Clase de activo | Importe (€) | Peso |
-|---|---:|---:|
-| Monetario / RF ultracorta EUR | 32.000 | 45,71% |
-| RF flexible + crédito global | 25.000 | 35,71% |
-| RV global (núcleo + value) | 11.000 | 15,71% |
-| RV temática (space economy) | 1.000 | 1,43% |
-| RV China | 1.000 | 1,43% |
-| **RF + monetario total** | **57.000** | **81,43%** |
-| **Renta variable total** | **13.000** | **18,57%** |
-
-Posiciones ≤ 2.000 €: 4 fondos = 5.000 € (7,14%).
-
----
+De los 60.000 € manuales invertibles, **81,4% está en renta fija y monetario** (57.000 €) y solo
+**18,6% en renta variable** (13.000 €), repartida en 5 posiciones de las que 3 son de 1.000 €.
+El agregado de los 90.000 € (Rock incluida) está en `cartera-actual.md` §4.
 
 ## 3. Costes
 
 | Concepto | Valor |
 |---|---|
-| TER ponderado base | **0,774% (~542 €/año sobre 70.000 €)** |
-| Coste por fondo (€/año) | NB 79 · DNCA 170 · Carmignac 144 · Groupama 16 · Gamma 69 · MyInv 29 · Cobas 17 · NB Space 17 · UBS 3 |
+| TER ponderado de los 60.000 € invertibles | **0,914% (548 €/año)**, sin contar el colchón |
+| TER ponderado de los 90.000 € (con Rock) | **0,746% (671 €/año)** — Rock aporta 123 € al 0,41% |
+| Coste por fondo (€/año, sobre 60.000 €) | NB 84 · DNCA 170 · Carmignac 144 · Gamma 76 · MyInv 29 · Cobas 23 · NB Space 19 · UBS 3 |
 | Comisiones de éxito potenciales | DNCA 20%, Carmignac 20%, Gamma 9%, MyInvestor Value 9% (35.000 € expuestos) |
 | Comisiones de suscripción/reembolso | NB hasta 3,00% susc. · DNCA hasta 2,00% · Carmignac hasta 2,00% · Groupama hasta 0,50% susc. / 4,00% reemb. · Gamma 0% · MyInv 0% · Cobas 0% · NB Space hasta 5,00% susc. · UBS 0% |
 
-Coste principal: Cobas 1,73%, NB Space 1,72%, MyInvestor Value 1,45%, DNCA 1,31%+, Carmignac 1,20%+. Frente a ~0,10–0,30% de un índice global.
+Coste principal: Cobas **2,33%**, NB Space **1,90%**, MyInvestor Value ~1,45%, DNCA 1,31%+, Carmignac 1,20%+. Frente a 0,16-0,29% de los indexados que propone la cartera.
 
 ---
 
@@ -117,30 +94,18 @@ Coste principal: Cobas 1,73%, NB Space 1,72%, MyInvestor Value 1,45%, DNCA 1,31%
 
 ---
 
-## 5. Plan de mejora / rebalanceo (propuesta)
+## 5. Criterios de decisión
 
-**Objetivo:** cartera completa y viable a largo plazo (perfil conservador-moderado).
+- **Perfil:** moderado; el 47,8% de RV es el techo razonable (caída esperada ≈ −20%). Si una caída
+  del −20% haría vender, el objetivo baja a 38-40%.
+- **Duración:** sin opinión propia sobre recesión, el punto medio es deuda corta (1-3 años) más el
+  crédito que ya se tiene; la parte larga es una apuesta, no un refugio.
+- **Crédito:** no se amplía HY mientras los spreads estén en +30-40 pb sobre lo normal.
+- **Coste:** se mide en euros, no en porcentaje, y nunca justifica por sí solo un rebalanceo.
+- **Ejecución:** siempre por traspaso entre fondos armonizados (0 € de impuestos).
 
-**Asignación objetivo propuesta:**
-
-| Clase | Peso | Importe aprox. |
-|---|---:|---:|
-| Monetario | 10–15% | 7–10 k |
-| RF (duración media + IG + algo HY) | 30–35% | 21–25 k |
-| RV global (núcleo indexado + value) | 40–50% | 28–35 k |
-| RV emergentes/China | 5–8% | 3,5–5,6 k |
-| Satélites temáticos | 0–5% | ≤3,5 k |
-
-**Acciones (usar TRASPASOS entre fondos armonizados: no tributan en España):**
-
-- **A.** Consolidar monetario: mantener Groupama (mejor YTD 1,85%, coste 0,16%) **o** Neuberger (mejor 3a/5a, 5★ MS); traspasar el otro hacia RF/RV.
-- **B.** Reducir crédito HY: bajar Carmignac Credit (TER 1,20%+success, HY ajustado, max DD −17,54%) y añadir RF pública/soberana de duración media o bonos globales IG.
-- **C.** Reforzar núcleo de RV: añadir fondo índice global (TER ~0,1–0,3%) como core; mantener Gamma Global y MyInvestor Value como tilts value.
-- **D.** Satélites: NB Space Economy (1,72% TER, vol 35,85%) → mantener ≤2% o cerrar; UBS China → ampliar a 5–8% aprovechando descuento (forward 10x) o cerrar.
-- **E.** Mantener Cobas (5★, TER 1,73%) como tilt value (excelente track record: +20,21% YTD, +101,87% a 3a).
-- **F.** Añadir inflación/real assets (máx 5%) si el perfil lo admite.
-
----
+La cartera que sale de estos criterios, con importes y movimientos exactos, está en
+`propuesta-actual.md`.
 
 ## 6. Oportunidades de mercado (octubre 2026)
 
@@ -170,12 +135,15 @@ Coste principal: Cobas 1,73%, NB Space 1,72%, MyInvestor Value 1,45%, DNCA 1,31%
 
 ---
 
-## 7. Próximos pasos
+## 7. Decisiones pendientes
 
-- Decidir perfil de riesgo y asignación objetivo (conservador vs moderado).
-- Elegir fondos específicos para los huecos (índice global, RF IG, emergentes, real assets) — puedo investigar candidatos si se pide.
-- Ejecutar rebalanceo por TRASPASOS (sin tributación).
-- Revisar anualmente; re-auditar si cambia el perfil o el mercado.
+- **Confirmar el 47,8% de RV** (o bajarlo a 38-40% si el −20% no se tolera).
+- **Verificar antes de operar**: comisiones de reembolso/suscripción, TER real de MyInvestor Value C
+  y clase disponible de cada fondo.
+- **Ritmo de entrada** a la RV nueva: 3 compras mensuales.
+- Revisar anualmente; re-auditar si cambia el perfil, los saldos o el mercado.
+
+Los importes, los fondos y los movimientos exactos están en `propuesta-actual.md`.
 
 ---
 

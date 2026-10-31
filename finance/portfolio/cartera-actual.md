@@ -11,7 +11,7 @@ status: frozen
 
 > **NO EDITAR.** Este fichero es la foto del estado real a 30/10/2026 y no se toca. Si cambian
 > los saldos o se ejecuta un rebalanceo, se crea un snapshot nuevo con otra fecha
-> (`cartera-actual-YYYY-MM-DD.md`). Las propuestas viven en `propuestas/` y se iteran allí.
+> (`cartera-actual-YYYY-MM-DD.md`). La propuesta vive en `propuesta-actual.md` y se itera allí.
 
 **Datos:** fichas MyInvestor MCP a 28/10/2026 (TER, rentabilidad, volatilidad) + factsheets de las
 gestoras a 30/09/2026 (TIR, duración, rating medio).
