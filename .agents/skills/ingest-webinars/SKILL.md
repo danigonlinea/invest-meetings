@@ -159,6 +159,12 @@ escribe `finance/reports/informe-webinars-myinvestor-<YYYY-MM-DD>.md` con la est
 informe de canal de `ingest-channel` (vídeos analizados, hilos comunes, conclusiones, tips
 priorizados, discrepancias, menciones con cifras y postura).
 
+## Si delegas la ingesta a un subagente
+
+- Pásale la carpeta del webinar ya descargada y pídele solo el `summary.md`.
+- El Paso 6 (catálogo) y el Paso 8 (`INDEX.md`) los ejecuta el agente principal: son los
+  que escriben fuera de la carpeta y un subagente con alcance limitado no debe tocarlos.
+
 ## Paso 8: Informa al usuario
 
 Da al usuario una lista numerada de 8 a 12 puntos clave en el chat.

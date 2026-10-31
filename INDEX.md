@@ -19,6 +19,7 @@ Un agente IA lee este archivo primero y después abre solo lo que necesita.
 | `finance/la-pizarra-de-andres/2026-10-23-la-actualidad-de-los-mercados-financieros-refleja-un-elevado-riesgo/summary.md` | meeting-summary | finance | 2026-10-23 | La Pizarra de Andrés: la actualidad refleja un riesgo elevado | [finance, meeting, transcript] |
 | `finance/revisions/2026-10-22-gestor-renta-4.md` | revision | finance | 2026-10-22 | 2026-10-22-gestor-renta-4 | [renta-4, revision] |
 | `finance/la-pizarra-de-andres/2026-10-22-gestor-de-renta-4-advierte-sobre-una-gran-recesion/summary.md` | meeting-summary | finance | 2026-10-22 | Gestor de Renta 4 advierte sobre una gran recesión | [finance, meeting, transcript] |
+| `finance/myinvestor-webinars/2026-10-20-japon-proxima-gran-oportunidad-en-bolsa/summary.md` | meeting-summary | finance | 2026-10-20 | Japón: La próxima gran oportunidad en bolsa | [japon, renta-variable-japonesa, arcus-japan-fund, campion-capital, myinvestor, value, topix, yen, gobernanza-corporativa, gestion-activa, nisa] |
 | `finance/la-pizarra-de-andres/2026-10-20-un-seguidor-paga-para-que-le-gestionen-su-dinero-merece/summary.md` | meeting-summary | finance | 2026-10-20 | La Pizarra de Andrés: un seguidor paga por gestión delegada, ¿merece la pena? | [finance, meeting, transcript] |
 | `finance/la-pizarra-de-andres/2026-10-18-la-inversion-en-valor-sigue-siendo-la-apuesta-ganadora/summary.md` | meeting-summary | finance | 2026-10-18 | La Inversión en Valor sigue siendo la Apuesta Ganadora | [finance, meeting, transcript] |
 | `finance/reports/informe-canal-la-pizarra-de-andres-2026-10-17.md` | channel-report | finance | 2026-10-17 | Informe del canal La Pizarra de Andrés (2026-10-17) | [la-pizarra-de-andres, youtube, mercados, inversion] |
@@ -34,7 +35,7 @@ Un agente IA lee este archivo primero y después abre solo lo que necesita.
 | `finance/la-pizarra-de-andres/2026-10-07-javier-andres-vivienda-espana-y-reino-unido/summary.md` | meeting-summary | finance | 2026-10-07 | Encuentro: Javier y Andrés — vivienda en España y Reino Unido | [finance, meeting, transcript] |
 | `finance/el-arte-de-invertir/2026-05-20-spacex-vale-2-trillones-o-es-el-ipo-mas-caro/summary.md` | meeting-summary | finance | 2026-05-20 | Resumen: SpaceX — ¿Vale 2 trillones o es el IPO más caro de la historia? | [finance, meeting, transcript] |
 
-**Total de artefactos indexados:** 28
+**Total de artefactos indexados:** 29
 
 ## Cómo llegar al dato
 
