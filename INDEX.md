@@ -5,7 +5,7 @@ Orden de lectura: `AGENTS.md` → este índice → el artefacto concreto.
 
 | Ruta | Tipo | Categoría | Fecha | Título | Tags |
 | --- | --- | --- | --- | --- | --- |
-| `finance/portfolio/propuesta-actual.md` | portfolio-proposal | finance | 2026-10-31 | Propuesta de cartera — 47,8% RV (moderada, 90k invertibles) | [cartera, propuesta, rebalanceo, rock, perfil-moderado, myinvestor, traspasos] |
+| `finance/portfolio/propuesta-actual.md` | portfolio-proposal | finance | 2026-10-31 | Propuesta de cartera — 54,9% RV decidida por contexto | [cartera, propuesta, rebalanceo, rock, decision-por-contexto, myinvestor, traspasos] |
 | `finance/portfolio/analisis/videos-2026-10-30.md` | portfolio-analysis | finance | 2026-10-31 | Cartera vs fuentes: veredicto posición por posición | [cartera, fondos, analisis, la-pizarra-de-andres, myinvestor] |
 | `finance/myinvestor-webinars/catalogo.md` | reference | finance | 2026-10-31 | Catálogo de webinars de MyInvestor | [myinvestor, webinars, catalogo, youtube] |
 | `finance/reports/sintesis-inversor-2026-10-30.md` | synthesis | finance | 2026-10-30 | Síntesis para el inversor · La Pizarra de Andrés, 18-25 oct 2026 | [la-pizarra-de-andres, sintesis, inversion] |

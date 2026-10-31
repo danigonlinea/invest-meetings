@@ -96,8 +96,9 @@ Coste principal: Cobas **2,33%**, NB Space **1,90%**, MyInvestor Value ~1,45%, D
 
 ## 5. Criterios de decisión
 
-- **Perfil:** moderado; el 47,8% de RV es el techo razonable (caída esperada ≈ −20%). Si una caída
-  del −20% haría vender, el objetivo baja a 38-40%.
+- **Porcentaje de RV:** no se elige por perfil. Sale de seis señales (coste real del dinero, prima de
+  crédito, valoración, concentración, riesgo de tipos y capacidad de aguante); hoy da 55% de RV con
+  una caída esperada del −23%. El suelo es conductual: si no se aguanta, baja.
 - **Duración:** sin opinión propia sobre recesión, el punto medio es deuda corta (1-3 años) más el
   crédito que ya se tiene; la parte larga es una apuesta, no un refugio.
 - **Crédito:** no se amplía HY mientras los spreads estén en +30-40 pb sobre lo normal.
@@ -137,7 +138,7 @@ La cartera que sale de estos criterios, con importes y movimientos exactos, est�
 
 ## 7. Decisiones pendientes
 
-- **Confirmar el 47,8% de RV** (o bajarlo a 38-40% si el −20% no se tolera).
+- **Confirmar la tolerancia al −23%** de caída; si no, el modelo baja a 45% (−19%) o 35% (−14%).
 - **Verificar antes de operar**: comisiones de reembolso/suscripción, TER real de MyInvestor Value C
   y clase disponible de cada fondo.
 - **Ritmo de entrada** a la RV nueva: 3 compras mensuales.
