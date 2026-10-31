@@ -5,25 +5,27 @@ type: channel-report
 category: finance
 tags: [la-pizarra-de-andres, youtube, mercados, inversion]
 status: final
+related: [finance/reports/sintesis-inversor-2026-10-30.md]
 ---
 # Informe del canal La Pizarra de Andrés (2026-10-30)
 
 - **Canal:** La Pizarra de Andrés (`@lapizarradeandres`).
 - **Fecha de la ejecución:** 2026-10-30.
-- **Vídeos analizados:** 5.
-- **Carpetas leídas de esta ejecución:** 5, todas en `finance/`.
+- **Vídeos analizados:** 5, ninguno ingerido antes.
 - **Orden:** de más antiguo (18 de octubre) a más reciente (25 de octubre).
-- **Ninguno de los 5 vídeos estaba ingerido antes:** los 5 son posteriores al último vídeo del canal que había en el repositorio (16 de octubre).
+- **Qué es este documento:** lo que dicen los cinco vídeos, con cita y minuto. El juicio propio
+  —qué no dar por bueno, plan de acción y señales a vigilar— está en
+  `sintesis-inversor-2026-10-30.md`, para no contarlo dos veces.
 
 ## Vídeos analizados
 
 | Fecha | Título | Duración | Carpeta |
 | --- | --- | --- | --- |
-| 2026-10-18 | La Inversión en Valor sigue siendo la Apuesta Ganadora | 100 min 26 s (6026 s) | `finance/2026-10-18-la-inversion-en-valor-sigue-siendo-la-apuesta-ganadora` |
-| 2026-10-20 | Un Seguidor PAGA para que le Gestionen su Dinero ¿Merece la Pena? | 16 min 45 s (1005 s) | `finance/2026-10-20-un-seguidor-paga-para-que-le-gestionen-su-dinero-merece` |
-| 2026-10-22 | Gestor de Renta 4 ADVIERTE sobre una gran RECESIÓN | 85 min 36 s (5136 s) | `finance/2026-10-22-gestor-de-renta-4-advierte-sobre-una-gran-recesion` |
-| 2026-10-23 | La Actualidad de los Mercados Financieros refleja un Elevado Riesgo | 14 min 5 s (845 s) | `finance/2026-10-23-la-actualidad-de-los-mercados-financieros-refleja-un-elevado-riesgo` |
-| 2026-10-25 | La RENTA FIJA puede SALVARNOS en estos momentos (Abaco Capital) | 58 min 31 s (3511 s) | `finance/2026-10-25-la-renta-fija-puede-salvarnos-en-estos-momentos-abaco-capital` |
+| 2026-10-18 | La Inversión en Valor sigue siendo la Apuesta Ganadora | 100 min 26 s (6026 s) | `finance/la-pizarra-de-andres/2026-10-18-la-inversion-en-valor-sigue-siendo-la-apuesta-ganadora` |
+| 2026-10-20 | Un Seguidor PAGA para que le Gestionen su Dinero ¿Merece la Pena? | 16 min 45 s (1005 s) | `finance/la-pizarra-de-andres/2026-10-20-un-seguidor-paga-para-que-le-gestionen-su-dinero-merece` |
+| 2026-10-22 | Gestor de Renta 4 ADVIERTE sobre una gran RECESIÓN | 85 min 36 s (5136 s) | `finance/la-pizarra-de-andres/2026-10-22-gestor-de-renta-4-advierte-sobre-una-gran-recesion` |
+| 2026-10-23 | La Actualidad de los Mercados Financieros refleja un Elevado Riesgo | 14 min 5 s (845 s) | `finance/la-pizarra-de-andres/2026-10-23-la-actualidad-de-los-mercados-financieros-refleja-un-elevado-riesgo` |
+| 2026-10-25 | La RENTA FIJA puede SALVARNOS en estos momentos (Abaco Capital) | 58 min 31 s (3511 s) | `finance/la-pizarra-de-andres/2026-10-25-la-renta-fija-puede-salvarnos-en-estos-momentos-abaco-capital` |
 
 ## Hilos comunes
 
@@ -74,34 +76,6 @@ status: final
 - 2026-10-18: Alemania es el primer país de la cartera por dos inmobiliarias cotizadas compradas tras la caída.
 - 2026-10-22: Colonial cotiza con un descuento del 55% y Vonovia del 60% sobre valor de activos.
 - Ambos gestores llegan al mismo sector desde el mismo argumento: precio frente a valor de tasación.
-
-## Conclusiones consolidadas para el inversor
-
-- El riesgo dominante del trimestre, según el canal, no es la bolsa sino la deuda: la americana, la francesa y la que financia la IA.
-- La renta fija vuelve a ser una opción real, y por eso la pregunta pasa a ser la duración: un bono a 10 años con duración 7,5 pierde un 7,5% por cada 100 puntos básicos.
-- Los dos gestores de renta fija invitados defienden carteras defensivas, con poca renta variable (10% y 16%) y mucha liquidez o deuda corta.
-- El coste es la parte de la cartera que el inversor controla: 0,70% de gestión más fondos de la casa puede convertir una cartera ganadora en una perdedora frente a su benchmark.
-- Un 46% de tecnología dentro del S&P 500 convierte la indexación al índice americano en una apuesta sectorial, no en una apuesta neutral.
-- La caída de las empresas de moda (entre el 50% y el 90%) confirma que comprar promesas sin beneficios es el camino más rápido a la pérdida.
-- El precio de entrada importa, pero el motivo de la caída importa más: cada gestor invitado distingue la caída de valoración de la caída por un problema de negocio.
-- Para un particular, la coincidencia del canal es indexación más buenos gestores, no selección individual de valores.
-
-## Tips priorizados para el inversor
-
-| Prioridad | Tip | Fuente |
-| --- | --- | --- |
-| alta | Escribir el porcentaje de renta variable objetivo y el actual, y pasar a renta fija si la diferencia supera 10 puntos | Gestor de Renta 4, 2026-10-22, 54:02 |
-| alta | Sumar la comisión de gestión y el coste de cada fondo, y comparar el total con un indexado del mismo índice | Andrés, 2026-10-20, 1:15 y 9:12 |
-| alta | Fijar una cantidad de liquidez disponible sin vender renta variable, como colchón para comprar en la caída | Andrés, 2026-10-23, 13:46 y Pablo González, 2026-10-25, 29:16 |
-| alta | Medir la duración media de la renta fija, no el vencimiento, y compararla con el 1,3 a 1,5 que mantiene Ábaco | Pablo González, 2026-10-25, 43:55 y 15:53 |
-| media | Programar una aportación mensual fija y mantenerla también en los meses de caída | Carlos, 2026-10-18, 12:32 |
-| media | Anotar la causa del descuento y una fecha de comprobación antes de abrir posición en un valor barato | Gestor de Renta 4, 2026-10-22, 66:43 |
-| media | Revisar el peso del sector tecnológico en la ficha del fondo o ETF que se compra | Andrés, 2026-10-23, 9:18 (inferida) |
-| media | Comprobar qué porcentaje de la cartera está en fondos de la gestora del propio banco | Andrés, 2026-10-20, 8:00 (inferida) |
-| media | Para cada posición, anotar múltiplo, crecimiento y si ese crecimiento se paga con caja | Pablo González, 2026-10-25, 47:04 |
-| baja | Revisar el reparto por países del fondo europeo y el peso de Francia | Andrés, 2026-10-23, 3:34 (inferida) |
-| baja | Calcular el descuento sobre valor neto de activos y el loan to value antes de invertir en una socimi | Gestor de Renta 4, 2026-10-22, 69:40 y 70:58 (inferida) |
-| baja | Reducir las fuentes a dos o tres gestores con historial comprobable | Carlos, 2026-10-18, 4:31 |
 
 ## Discrepancias entre vídeos
 

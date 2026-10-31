@@ -157,16 +157,9 @@ Escribe estas secciones, en este orden.
 | `<YYYY-MM-DD>` | `<título>` | `<duración>` | `<carpeta>` |
 
 3. `## Hilos comunes`. Los temas que se repiten entre los vídeos.
-4. `## Conclusiones consolidadas para el inversor`.
-5. `## Tips priorizados para el inversor`, una tabla con estas columnas.
-
-| Prioridad | Tip | Fuente |
-| --- | --- | --- |
-| `alta`, `media` o `baja` | `<tip>` | `<vídeo>` y `<minuto>` |
-
-6. `## Discrepancias entre vídeos`. Una viñeta por desacuerdo, o la frase `No hay discrepancias.`.
-7. `## Riesgos que menciona el canal`.
-8. `## Menciones con cifras y postura`. Una tabla con estas columnas.
+4. `## Discrepancias entre vídeos`. Una viñeta por desacuerdo, o la frase `No hay discrepancias.`.
+5. `## Riesgos que menciona el canal`.
+6. `## Menciones con cifras y postura`. Una tabla con estas columnas.
 
 | Nombre | Tipo | Cifra que da el hablante | Postura | Vídeo y minuto |
 | --- | --- | --- | --- | --- |
@@ -174,13 +167,25 @@ Escribe estas secciones, en este orden.
 
 Debajo, dos listas: los vehículos con ISIN o ticker confirmado, y los nombres que el canal descarta con su motivo.
 
-9. `## Qué se puede comprar hoy según el canal`. Solo las filas con postura `recomienda` o `idea a estudiar`, con el vehículo concreto cuando el vídeo lo nombre. Una frase de encuadre antes de la lista dice que no es asesoramiento y qué interés comercial tiene cada hablante (gestión, consulta, plataforma o afiliación). Si no hay ninguna fila con esas posturas, escribe `El canal no recomienda ningún vehículo concreto en esta ejecución.`
+7. `## Qué se puede comprar hoy según el canal`. Solo las filas con postura `recomienda` o `idea a estudiar`, con el vehículo concreto cuando el vídeo lo nombre. Una frase de encuadre antes de la lista dice que no es asesoramiento y qué interés comercial tiene cada hablante (gestión, consulta, plataforma o afiliación). Si no hay ninguna fila con esas posturas, escribe `El canal no recomienda ningún vehículo concreto en esta ejecución.`
+
+El informe es el **acta** de la tanda: lo que dicen los vídeos, con cita y minuto. El juicio
+propio va en otro documento y no se duplica aquí.
+
+- `channel-report` (este archivo): hechos de la tanda. Hilos, discrepancias, riesgos, menciones y
+  qué se puede comprar. Nada más.
+- `synthesis` (`sintesis-inversor-<YYYY-MM-DD>.md`, misma carpeta `reports/`): juicio propio sobre
+  un periodo — foto en una página, qué no dar por bueno, plan de acción y señales a vigilar. Se
+  escribe cuando el usuario lo pide o cuando hay dos o más tandas que comparar, no en cada ingesta.
+- Conclusiones para el inversor y tips priorizados **no** van en el informe: son juicio y viven en
+  la síntesis. En su lugar, el informe cierra la sección de metadatos con una línea que apunta a la
+  síntesis cuando exista, y añade `related:` en el frontmatter.
 
 Aplica estas reglas al escribir el informe.
 
 - Lee cada `summary.md` antes de escribir el informe.
 - No inventes nunca un dato.
-- No repitas un tip que ningún resumen guarda.
+- No repitas en el informe nada que ya esté en la síntesis del mismo periodo.
 - Marca cada inferencia con la palabra `inferida`.
 - No escribas la postura `recomienda` sin una cita literal del hablante.
 - Un nombre mencionado sin cifra no se cae del informe: va en la lista de menciones sin cifras.

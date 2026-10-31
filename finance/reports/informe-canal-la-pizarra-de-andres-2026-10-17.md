@@ -12,16 +12,16 @@ status: final
 - **Fecha de la ejecución:** 2026-10-17
 - **Vídeos analizados:** 3
 - **Resúmenes leídos de esta ejecución:** 3
-- **Resumen de contexto, no analizado en esta ejecución:** `2026-10-09-la-pizarra-burbujas-ia/summary.md`
+- **Resumen de contexto, no analizado en esta ejecución:** `ai/la-pizarra-de-andres/2026-10-09-la-pizarra-burbujas-ia/summary.md`
 - **Numeración usada en el informe:** el vídeo 1 es el del 2026-10-16, el vídeo 2 es el del 2026-10-15 y el vídeo 3 es el del 2026-10-13.
 
 ## Vídeos analizados
 
 | Fecha | Título | Duración | Carpeta |
 | --- | --- | --- | --- |
-| 2026-10-16 | La Pizarra de Andrés: respuestas a las preguntas más importantes sobre inversión | 22 minutos 59 segundos | `2026-10-16-quieres-invertir-mejor-respondo-las-preguntas-mas-importantes` |
-| 2026-10-15 | La Pizarra de Andrés: "Da miedo, pero la IA puede solucionar la economía" (Juan Santamaría) | 62 minutos 58 segundos | `2026-10-15-da-miedo-pero-la-ia-puede-solucionar-la-economia-juan` |
-| 2026-10-13 | La Pizarra de Andrés: Robeco Emerging Markets frente al indexado de emergentes | 10 minutos 51 segundos | `2026-10-13-este-fondo-de-mercados-emergentes-es-mejor-que-el-indexado` |
+| 2026-10-16 | La Pizarra de Andrés: respuestas a las preguntas más importantes sobre inversión | 22 minutos 59 segundos | `finance/la-pizarra-de-andres/2026-10-16-quieres-invertir-mejor-respondo-las-preguntas-mas-importantes` |
+| 2026-10-15 | La Pizarra de Andrés: "Da miedo, pero la IA puede solucionar la economía" (Juan Santamaría) | 62 minutos 58 segundos | `ai/la-pizarra-de-andres/2026-10-15-da-miedo-pero-la-ia-puede-solucionar-la-economia-juan` |
+| 2026-10-13 | La Pizarra de Andrés: Robeco Emerging Markets frente al indexado de emergentes | 10 minutos 51 segundos | `finance/la-pizarra-de-andres/2026-10-13-este-fondo-de-mercados-emergentes-es-mejor-que-el-indexado` |
 
 ## Hilos comunes
 

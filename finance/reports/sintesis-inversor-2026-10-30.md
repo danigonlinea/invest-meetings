@@ -120,6 +120,6 @@ La discrepancia es real y útil: **dos gestores de renta fija de la misma semana
 ## Archivos de esta ejecución
 
 - `revision-adversarial-2026-10-30.md`: qué estaba mal en los resúmenes y cómo se corrigió.
-- `revisiones/2026-10-22-gestor-renta-4.md`: auditoría detallada del vídeo de Renta 4.
+- `auditoria-2026-10-22-gestor-renta-4.md`: auditoría detallada del vídeo de Renta 4.
 - `summary.md` de las 5 carpetas de `finance/`: corregidos (31 cambios).
 - `informe-canal-la-pizarra-de-andres-2026-10-30.md`: informe del canal.

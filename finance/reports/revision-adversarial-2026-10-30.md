@@ -44,7 +44,7 @@ status: final
 - **La bolsa tiene volatilidad 13, no 10** (15:48); el 10 % es del bono a 30 años.
 - **«Sin riesgo de mercado» es del redactor.** Él enumera dos riesgos del bono: que el emisor pague y la duración (07:03-07:33).
 - **1,07 y 1,017 trillones son la misma partida leída dos veces en pantalla** (19:52), no dos datos.
-- La auditoría completa de este vídeo está en `revisiones/2026-10-22-gestor-renta-4.md`.
+- La auditoría completa de este vídeo está en `auditoria-2026-10-22-gestor-renta-4.md`.
 
 ### 2026-10-23 · Actualidad de mercados (Andrés) — 4 correcciones
 

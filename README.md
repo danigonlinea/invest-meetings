@@ -64,6 +64,24 @@ Cada vídeo o reunión es una carpeta `YYYY-MM-DD-<slug>/` dentro de la subcarpe
 Las skills viven en `.agents/skills/` (`ingest-meeting`, `ingest-channel`,
 `ingest-webinars`); cuándo usar cada una, en `AGENTS.md`.
 
+## Reports: qué es cada uno
+
+`<categoria>/reports/` es la salida analítica. Cada documento tiene un trabajo distinto y ninguno
+repite al otro.
+
+| `type` | Qué contiene | Cuándo se escribe |
+| --- | --- | --- |
+| `channel-report` | **Acta de una tanda**: vídeos analizados, hilos comunes, discrepancias, riesgos, menciones con cifra y postura, qué se puede comprar. Solo hechos, con cita y minuto. | Al ingerir N vídeos de un canal |
+| `synthesis` | **Juicio propio sobre un periodo**: foto en una página, dónde se contradicen, qué no dar por bueno, plan de acción y señales a vigilar. | Al cerrar un periodo o cuando hay dos o más tandas |
+| `revision` | **Auditoría de resúmenes**: qué decía el resumen, qué dice la transcripción, qué se corrigió. | Tras una ingesta con revisión adversarial |
+
+En `finance/portfolio/` viven además los documentos de cartera (`portfolio-snapshot`,
+`portfolio-diagnosis`, `portfolio-analysis`, `portfolio-proposal`): cruzan las fuentes con las
+posiciones reales y caducan con la cartera, por eso no están en `reports/`.
+
+**Regla:** un dato se escribe una vez. El acta recoge el hecho y la síntesis lo interpreta, pero
+no lo repite. Si dos documentos dicen lo mismo, sobra uno.
+
 ## Comandos
 
 ```bash
