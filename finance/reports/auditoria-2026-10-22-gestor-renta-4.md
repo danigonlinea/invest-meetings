@@ -1,5 +1,5 @@
 ---
-title: "2026-10-22-gestor-renta-4"
+title: "Auditoría adversarial del resumen de Renta 4 (2026-10-22)"
 date: 2026-10-22
 type: revision
 category: finance

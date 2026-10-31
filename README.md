@@ -15,11 +15,10 @@ finance/                        inversión y finanzas
   el-arte-de-invertir/          canal El Arte de Invertir
   portfolio/                    cartera personal: estado, diagnóstico y propuestas
     README.md                   qué es cada fichero y cuál se puede editar
-  reports/                      informes de canal, síntesis, revisiones adversariales
-  revisions/                    auditorías de resúmenes concretos
+  reports/                      informes de canal, síntesis y auditorías (el `type` los distingue)
 ai/                             IA
   la-pizarra-de-andres/         vídeos de IA del mismo canal
-  reports/ · revisions/         se crean con el primer informe de IA
+  reports/                      se crea con el primer informe de IA
 reference/                      glosario de ponentes y nombres, glosario técnico
 tools/                          catálogo de webinars, generador de INDEX.md
 ytpipe/                         CLI que descarga la transcripción de YouTube

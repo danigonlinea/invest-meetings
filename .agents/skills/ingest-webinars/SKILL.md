@@ -12,7 +12,7 @@ Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`
 - Ruta de la skill: `.agents/skills/ingest-webinars/`.
 - Ruta de las carpetas de webinar: `<project-root>/finance/myinvestor-webinars/YYYY-MM-DD-<topic-slug>/`.
 - Ruta del catálogo: `<project-root>/finance/myinvestor-webinars/catalogo.md`. Lo genera el script; nunca se edita a mano.
-- Ruta de los informes: `<project-root>/finance/reports/`. Ruta de las auditorías: `<project-root>/finance/revisions/`.
+- Ruta de los informes y de las auditorías: `<project-root>/finance/reports/` (la auditoría lleva `type: revision`).
 - Categoría: siempre `finance`. Fuente: siempre `myinvestor-webinars`.
 - Al terminar, ejecuta `python3 tools/build_index.py` para regenerar `INDEX.md`.
 
@@ -141,7 +141,7 @@ Contrasta cada `summary.md` con su transcripción. Busca, en este orden:
 5. Atribuciones sin etiquetas de hablante: `inferida` o `no atribuible con certeza`.
 
 Corrige el `summary.md`. Si la auditoría da material propio, escribe el archivo en
-`finance/revisions/`, nunca dentro de la carpeta del webinar.
+`finance/reports/` con `type: revision`, nunca dentro de la carpeta del webinar.
 
 ## Paso 6: Actualiza el catálogo
 
@@ -175,7 +175,7 @@ Da al usuario una lista numerada de 8 a 12 puntos clave en el chat.
 
 ## Guardarraíles
 
-- Escribe solo dentro de `finance/myinvestor-webinars/`, `finance/revisions/` y `finance/reports/`.
+- Escribe solo dentro de `finance/myinvestor-webinars/` y `finance/reports/`.
 - No toques ninguna carpeta de otro canal.
 - No escribas nunca `transcript.json`.
 - No inventes nunca una fecha, un hablante, una cifra ni una fuente.

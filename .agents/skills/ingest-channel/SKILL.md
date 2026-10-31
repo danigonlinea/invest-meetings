@@ -13,7 +13,6 @@ Esta skill trabaja solo en este repositorio, el repositorio `investing-meetings`
 - Ruta de las carpetas de reunión: `<project-root>/<categoria>/<fuente>/YYYY-MM-DD-<topic-slug>/`.
 - La categoría vale `ai` o `finance`. La fuente es el canal: `la-pizarra-de-andres`, `myinvestor-webinars`, `el-arte-de-invertir`. La regla de la categoría y de la fuente es la de `ingest-meeting`; el agente las elige por el tema del vídeo antes de descargar. Ver `AGENTS.md`.
 - Ruta del informe: `<project-root>/<categoria>/reports/informe-canal-<canal-slug>-<YYYY-MM-DD>.md`.
-- Ruta de las revisiones adversariales: `<project-root>/<categoria>/revisions/`.
 - Ruta de los artefactos analíticos: `<project-root>/<categoria>/reports/`.
 
 Dependencias:
@@ -140,7 +139,7 @@ Busca en este orden.
 5. **Atribuciones.** Con `has_speaker_labels: false`, marcar `no atribuible con certeza` cuando el contexto no baste.
 6. **Aritmética de los propios hablantes.** Si su cuenta no cuadra, decirlo en la revisión, no reproducirla como dato.
 
-Corrige el `summary.md` y deja la trazabilidad en un archivo aparte. No escribas el archivo de auditoría dentro de la carpeta de la reunión: esa carpeta guarda `transcript.json`, el `.txt` y `summary.md`. Los archivos de revisión/aditoría van a `<project-root>/<categoria>/revisions/`.
+Corrige el `summary.md` y deja la trazabilidad en un archivo aparte. No escribas el archivo de auditoría dentro de la carpeta de la reunión: esa carpeta guarda `transcript.json`, el `.txt` y `summary.md`. Los archivos de revisión/auditoría van a `<project-root>/<categoria>/reports/` con `type: revision`.
 
 ## Paso 6: Escribe el informe del canal
 
