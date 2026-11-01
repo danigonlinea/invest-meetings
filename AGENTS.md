@@ -10,7 +10,7 @@ cartera, añade `finance/portfolio/README.md` como cuarto paso.
 
 | Pregunta del usuario | Ruta | Empezar por |
 | --- | --- | --- |
-| Su cartera, rebalanceo, traspasos, "¿qué hago con mi dinero?" | `finance/portfolio/` | `cartera-actual.md` → `diagnostico-*.md` → `propuesta-actual.md` |
+| Su cartera, rebalanceo, traspasos, "¿qué hago con mi dinero?" | `finance/portfolio/` | `cartera-actual.md` → `propuesta-actual.md` |
 | Un fondo, ETF o acción que tiene o le han recomendado | `finance/portfolio/` | Su ficha en `cartera-actual.md`, luego los `summary.md` que lo nombran |
 | Macro, tipos, inflación, renta fija, mercados | `finance/la-pizarra-de-andres/` | `summary.md` más reciente del tema |
 | Gestoras, entrevistas, "qué dice MyInvestor" | `finance/myinvestor-webinars/` | `catalogo.md` → carpeta del webinar → `summary.md` |
