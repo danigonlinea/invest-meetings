@@ -112,6 +112,8 @@ La sección `speakers` usa estos campos:
 | `label` | string | La etiqueta del hablante en los subtítulos. Una cadena vacía si no hay etiqueta. |
 | `word_count` | int | El número de palabras del hablante. |
 
+En la práctica YouTube no da etiquetas de hablante en los vídeos de este repositorio: `has_speaker_labels` vale `false` y la sección `speakers` no existe. `name` vale siempre `null`: el script nunca inventa nombres. Los nombres de los ponentes solo entran en el resumen, según la regla de atribución de `reference/glossary.md`.
+
 La sección `chunks` usa estos campos:
 
 | Campo | Tipo | Contenido |
@@ -201,6 +203,8 @@ El script para si la carpeta ya existe y `--force` está ausente.
 El script muestra un bloque con el plan antes de escribir. Después muestra un bloque con el resultado.
 
 El script no muestra la traza del error. La variable `YTPIPE_DEBUG` vale `1` para ver la traza.
+
+Si no hay ninguna pista en los idiomas pedidos, el script sale con código 1, no escribe la carpeta y el error sugiere ejecutar `ytpipe languages <url>` para ver las pistas que sí existen.
 
 Ejemplo completo:
 

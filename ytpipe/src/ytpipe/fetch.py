@@ -180,7 +180,11 @@ def _pick_track(metadata: dict, wanted: list[str]) -> dict:
             ranked = sorted(matching, key=lambda track: wanted.index(track["code"]))
             return _best_of(ranked)
 
-    raise RuntimeError("no subtitle available")
+    raise RuntimeError(
+        "no subtitle available: the video has no track in any requested language. "
+        f"Run `ytpipe languages {metadata.get('webpage_url') or metadata.get('id') or '<url>'}` "
+        "to list the tracks it does have."
+    )
 
 
 def _manual_tracks(source: object, code: str | None = None) -> list[dict]:
