@@ -48,6 +48,18 @@ Pregunta al usuario por los datos que faltan antes de escribir cualquier archivo
 
 Si la carpeta ya tiene `transcript.json`, el agente lee ese archivo. No pide la transcripción en el chat.
 
+## Si `ytpipe` no puede descargar
+
+`ytpipe fetch` sale con código 1 cuando YouTube no da ninguna pista de subtítulos o cuando bloquea la descarga (bot check, vídeo privado, geobloqueo).
+
+1. Mira `ytpipe languages <url>` y reintenta una vez con `--lang <código>`.
+2. Si vuelve a fallar, para y da al usuario el mensaje exacto de `ytpipe`. No sigas con la ingesta.
+3. No escribas `transcript.json` a mano, ni con otra herramienta: el JSON lo escribe `ytpipe` y es la fuente de la verdad.
+
+- Un JSON fabricado rompe `stats`, `chunks` y los índices `text_start`/`text_end` que usan los demás pasos.
+- El mensaje de "no subtitle available" trae la orden `ytpipe languages` que hay que ejecutar.
+- Si el usuario pega la transcripción en el chat, esa es la ruta del Paso 2: sin `transcript.json`, el resumen se apoya en el texto pegado y el agente lo dice en la nota.
+
 ## Paso 2: Escribe la transcripción literal
 
 Escribe el texto del usuario en el archivo `.txt` carácter por carácter.
@@ -83,7 +95,7 @@ Lee el archivo con `python3 -c` o con la herramienta `read`.
 - El agente usa `chunks` como unidad de lectura. Cada chunk trae `text`, `text_start`, `text_end`, `time_start_iso`, `time_end_iso` y `speakers`.
 - El texto plano del vídeo sale de unir `chunks[].text` con un espacio. `text_start` y `text_end` son las posiciones en ese texto.
 - El agente usa `segments` cuando necesita una cita exacta. Cada segment trae `index`, `speaker`, `start`, `end` y `text`.
-- Cuando `speakers` no existe, el vídeo tiene una sola voz. El agente lo dice en la nota y atribuye todo a `speaker-1`.
+- Cuando `speakers` no existe, YouTube no dio etiquetas de hablante: puede haber una sola voz o varias. El agente no las separa por conjetura y aplica la sección **Nombres y atribuciones**.
 - Cuando `speakers` existe, el agente usa el campo `id` de cada entrada. El campo `name` vale `null` porque YouTube no da nombres.
 - El campo `segments[].speaker` vale `null` cuando el vídeo no tiene etiquetas. El agente nunca inventa un hablante.
 
@@ -248,6 +260,22 @@ Lee el archivo `summary.md` después de escribirlo. El agente que escribe puede 
 - Corrige cada caso. Cambia solo la palabra rota.
 
 **Criterio de finalización:** el comando devuelve 0 líneas, y el agente informa del resultado.
+
+## Nombres y atribuciones
+
+Escribe un nombre propio solo cuando esté claro por la transcripción o por `reference/glossary.md`. Hay tres casos claros.
+
+1. **El presentador del canal.** Mira la tabla **Canales** del glosario. En "La Pizarra de Andrés" el entrevistador es siempre Andrés, también cuando el invitado lo llama por su nombre.
+2. **El invitado** que se presenta o al que el presentador nombra literalmente, escrito con la forma canónica de la tabla **Ponentes**.
+3. **Un fondo, una gestora o una empresa** nombrados literalmente en el audio, con la forma canónica del glosario. Ejemplos: `MyInvestor`, `Artemisa`, `Vanguard`.
+
+Fuera de esos tres casos no pongas nombre.
+
+- Escribe `no atribuible con certeza` cuando dos voces comparten nombre o el turno es ambiguo.
+- Escribe `(inferida)` cuando deduces el turno por el contenido y no por una etiqueta de hablante.
+- El título del vídeo sirve para confirmar un nombre que ya aparece en la transcripción, no para introducirlo.
+- No deduzcas a un invitado por el slug de la carpeta ni por el nombre del archivo `.txt`.
+- Añade el nombre nuevo a `reference/glossary.md` antes de usarlo en el resumen.
 
 ## Convenciones
 

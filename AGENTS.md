@@ -29,7 +29,7 @@ Nombres de carpeta, frontmatter YAML y comandos: `README.md`.
 ## 2. Reglas que no se negocian
 
 - **Ninguna cifra sin respaldo** en la transcripción. Sin dato del hablante, el criterio va sin número.
-- **Ninguna atribución inventada**: sin etiquetas de hablante, marca `inferida` o `no atribuible con certeza`.
+- **Ninguna atribución inventada**: sin etiquetas de hablante, marca `inferida` o `no atribuible con certeza`. Un nombre solo entra si es el presentador del canal, un invitado nombrado o un fondo/gestora nombrados literalmente (ver la regla de atribución de `reference/glossary.md`).
 - **Una mención no es una recomendación**: `recomienda` exige cita literal; si el hablante vende el producto, `(lo comercializa)` en la misma fila.
 - **Hedges y magnitudes se conservan** ("si no me equivoco", `trillion` = billón).
 - Cada tip pertenece a su hablante: el agente no da consejo financiero.

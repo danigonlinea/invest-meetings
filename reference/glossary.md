@@ -25,6 +25,16 @@ Cuando aparezca un nuevo ponente en una reunión futura:
 
 > Regla de oro: en un resumen, el nombre canónico del ponente va siempre escrito de la misma manera, y cualquier variante de transcripción va en la sección "Advertencias sobre la transcripción" y en esta tabla.
 
+## Regla de atribución
+
+Un nombre propio entra en un resumen solo si está claro por la transcripción o por las tablas de este glosario. Tres casos claros:
+
+1. **Presentador del canal**: lo da la tabla **Canales**. En "La Pizarra de Andrés" el entrevistador es siempre Andrés, aunque el invitado lo llame por su nombre.
+2. **Invitado nombrado literalmente**: el presentador lo presenta o el propio invitado se identifica. Se escribe con la forma canónica de la tabla **Ponentes**.
+3. **Fondo, gestora o empresa nombrados literalmente** en el audio, con la forma canónica de este glosario.
+
+Fuera de esos casos: `no atribuible con certeza` si el turno es dudoso, `(inferida)` si se deduce por el contenido. El título del vídeo confirma un nombre que ya suena en la transcripción; no lo introduce.
+
 ## Ponentes
 
 | Nombre canónico | Rol | Canal / contexto | Aparece en | Notas |

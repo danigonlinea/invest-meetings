@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -59,7 +60,9 @@ def test_extract_video_id_fails_on_a_bad_url() -> None:
 
 
 def test_default_out_dir_ends_with_the_project_root() -> None:
-    assert str(cli.default_out_dir()).endswith("investing-meetings")
+    root = cli.default_out_dir()
+    assert (root / "ytpipe" / "pyproject.toml").exists()
+    assert (root / "AGENTS.md").exists()
 
 
 def test_dry_run_writes_nothing(tmp_path, monkeypatch, capsys) -> None:
